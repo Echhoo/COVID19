@@ -67,7 +67,7 @@ class Spider:
     def getOtherCountries(self):
         """
         封装的获取其他数据
-        :return:
+        :return: 成功与否
         """
         # 首先验证有没有今天的数据
         title = self.soup.find('span', class_="today-title", text="全球疫情")
