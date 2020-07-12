@@ -1,3 +1,9 @@
 .DS_Store
 
 /.idea/
+
+# 虚拟环境
+/venv/
+
+# python 相关
+__pycache__/
