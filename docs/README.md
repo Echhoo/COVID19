@@ -7,7 +7,8 @@
   - [backend](#backend)
     - [spider](#spider)
   - [docs](#docs)
-    - [DB_design](#db_design)
+    - [DB_design.md](#db_designmd)
+    - [spring_thrift_api.md](#spring_thrift_apimd)
 
 # framework
 
@@ -23,5 +24,8 @@
 ## docs
 > 项目文档
 
-### DB_design
+### DB_design.md
 > 数据库设计文档
+
+### spring_thrift_api.md
+> thrift的接口
