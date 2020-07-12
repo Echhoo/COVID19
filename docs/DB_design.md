@@ -1,6 +1,8 @@
 # 数据库设计
 
 ## OTHERS
+> 其他国家的数据
+
 |属性名|取值|说明|
 |:-|:-|:-|
 |`id`|int|pk auto_increment|
@@ -10,6 +12,8 @@
 |`cure`|int|治愈人数|
 
 ## CHINA
+> 中国各省的具体数据
+
 |属性名|取值|说明|
 |:-|:-|:-|
 |`id`|int|pk auto_increment|
@@ -19,6 +23,8 @@
 |`cure`|int|治愈人数|
 
 ## CHINA_DETAIL
+> 中国每个省内的数据
+
 |属性名|取值|说明|
 |:-|:-|:-|
 |`id`|int|fk(CHINA.id)|
