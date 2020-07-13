@@ -1,7 +1,7 @@
 # 声明 python 包名
 namespace py spider.api
 # 声明 java 包名
-namespace java cool.bro.thrift.spider
+namespace java group.corona.thrift.spider
 
 service SpiderService {
     # 刷新其他国家的数据，并将数据储存到数据库中

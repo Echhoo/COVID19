@@ -39,8 +39,6 @@ class Spider:
     soup = None
 
     def __init__(self):
-        # ('DEFAULT', 'MONGODB-X509', 'PLAIN', 'MONGODB-CR', 'SCRAM-SHA-256', 'SCRAM-SHA-1', 'GSSAPI')
-        # self.client.COVID19Spider.authenticate(name="admin", password="admin")
         pass
 
     def makeSoup(self):
@@ -180,7 +178,7 @@ class Spider:
         :param province: 省名
         :return: 是否成功
         """
-        print("尝试爬取 %s 数据！" % self.CHINA_DETAIL_TABLE)
+        print("尝试爬取 %s 数据！省份：%s" % (self.CHINA_DETAIL_TABLE, province))
         # 获取当前的网页
         self.makeSoup()
 
@@ -240,4 +238,3 @@ class Spider:
                 # 当日数据存在且数据更新时间相同
                 print("网页更新时间与当前相同...\n什么都不需要做")
                 return True
-
