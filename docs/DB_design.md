@@ -10,7 +10,8 @@
 |`confirm`|int|确诊数|
 |`dead`|int|死亡人数|
 |`cure`|int|治愈人数|
-|`date`|varchar(8)|数据对应日期|
+|`date`|varchar(10)|数据对应日期|
+|`time`|varchar(8)|数据对应时间|
 
 ## CHINA
 > 中国各省的具体数据
@@ -22,16 +23,18 @@
 |`confirm`|int|确诊数|
 |`dead`|int|死亡人数|
 |`cure`|int|治愈人数|
-|`date`|varchar(8)|数据对应日期|
+|`date`|varchar(10)|数据对应日期|
+|`time`|varchar(8)|数据对应时间|
 
 ## CHINA_DETAIL
 > 中国每个省内的数据
 
 |属性名|取值|说明|
 |:-|:-|:-|
-|`p_id`|int|fk(CHINA.id)|
+|`parent`|varchar(30)|fk(CHINA.city)|
 |`area`|varchar(30)|pk 地区|
 |`confirm`|int|确诊数|
 |`dead`|int|死亡人数|
 |`cure`|int|治愈人数|
-|`date`|varchar(8)|数据对应日期|
+|`date`|varchar(10)|数据对应日期|
+|`time`|varchar(8)|数据对应时间|
