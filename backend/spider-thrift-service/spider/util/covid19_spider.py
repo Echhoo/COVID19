@@ -63,7 +63,7 @@ class Spider:
         date = str(regex.search(date_element.text).group())
         regex = re.compile(r'\d{2}:\d{2}:\d{2}')
         time = str(regex.search(date_element.text).group())
-        return {date, time}
+        return [date, time]
 
     def getOtherCountriesData(self, countries, date, time):
         """
@@ -89,6 +89,7 @@ class Spider:
         """
         # 获取当前的网页
         self.makeSoup()
+
         # 首先验证有没有今天的数据
         title = self.soup.find('span', class_="today-title", text="全球疫情")
         if title is None:
@@ -122,7 +123,7 @@ class Spider:
                     database.delete_many({"date": date})
                     database.insert_many(data)
                 except Exception as e:
-                    print("Something Wrong in update and insert!", e)
+                    print("Something Wrong in delete and insert!", e)
                     return False
                 return True
             else:
@@ -135,32 +136,50 @@ class Spider:
         :param province: 省名
         :return: child的Tag list对象
         """
-        temp = self.soup.find('span', attrs={"class": "area"}, text="北京")
+        temp = self.soup.find('span', attrs={"class": "area"}, text=province)
         if temp is None:
             raise NoSuchProvinceException
         try:
             parent = temp.parent.parent
-            return parent.find_all('div', attrs={"class": "prod-city-block prod-city-block110000 close"})
+            return parent.find_all('div')[2:]
         except Exception:
             raise NoDataException
 
-
-    def getProvinceDataList(self, cities):
+    def getProvinceDataList(self, cities, parent, date, time):
         """
         返回所有cities的数据list
+        :param parent: 城市所属的省市
+        :param time: 数据刷新的时间
+        :param date: 数据刷新的日期
         :param cities: 所有城市的Tag list
         :return: list
         """
-
+        return [{
+            "parent": parent,
+            "city": city.contents[1].text,
+            "confirm": int(city.contents[3].text),
+            "dead": int(city.contents[5].text),
+            "cure": int(city.contents[7].text),
+            "date": date,
+            "time": time
+        } for city in cities]
 
     def getProvinceData(self, province):
         """
-        获取一个省的所有子数据，没有查询日期！
+        获取一个省的所有子数据
         :param province: 省名
-        :return: list
+        :return: 是否成功
         """
         # 获取当前的网页
         self.makeSoup()
+
+        # 首先验证有没有今天的数据
+        title = self.soup.find('span', class_="today-title", text="中国疫情")
+        if title is None:
+            raise NoDataException
+
+        # 确定数据更新的日期
+        [date, time] = self.getUpdateTime(title)
 
         # 获取所有child
         children = None
@@ -173,6 +192,36 @@ class Spider:
             print("div父子关系有误！", e)
             return False
 
-
-
+        # 判断数据库中是否有当日数据
+        database = self.db[self.CHINA_DETAIL_TABLE]
+        exists = database.find_one({"parent": province, "date": date})
+        print(date, time)
+        if exists is None:
+            # 当日数据不存在, 则需要插入
+            # 获取所有子数据数据的Tag list
+            data = self.getProvinceDataList(children, province, date, time)
+            print("insert", data)
+            try:
+                database.insert_many(data)
+            except Exception as e:
+                print("Something Wrong in insert!", e)
+                return False
+            return True
+        else:
+            # 当日数据存在, 则需要具体判断
+            exists = database.find_one({"parent": province, "date": date, "time": time})
+            if exists is None:
+                # 当日数据存在, 但更新时间不同，则需要更新
+                data = self.getProvinceDataList(children, province, date, time)
+                print("update", data)
+                try:
+                    database.delete_many({"parent": province, "date": date})
+                    database.insert_many(data)
+                except Exception as e:
+                    print("Something Wrong in delete and insert!", e)
+                    return False
+                return True
+            else:
+                # 当日数据存在且数据更新时间相同
+                return True
 
