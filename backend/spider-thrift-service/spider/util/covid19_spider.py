@@ -21,6 +21,12 @@ class NoDataException(Exception):
     def __init__(self, msg="当日无数据！"):
         super(NoDataException, self).__init__(msg)
 
+class NoSuchProvinceException(Exception):
+    """
+    没有当前省的异常
+    """
+    def __init__(self, msg="没有这个省！"):
+        super(NoSuchProvinceException, self).__init__(msg)
 
 class Spider:
 
@@ -49,9 +55,21 @@ class Spider:
         self.soup = BeautifulSoup(req.text, 'lxml')
         return self.soup
 
+    def getUpdateTime(self, title):
+        # 确定数据更新的日期
+        date_element = title.find_next_sibling('span', attrs={"class": "today-time"}) \
+            .find_next_sibling('span', attrs={"class": "today-time"})
+        regex = re.compile(r'\d{4}-\d{2}-\d{2}')
+        date = str(regex.search(date_element.text).group())
+        regex = re.compile(r'\d{2}:\d{2}:\d{2}')
+        time = str(regex.search(date_element.text).group())
+        return {date, time}
+
     def getOtherCountriesData(self, countries, date, time):
         """
         将所有其他国家的书存入数据库
+        :param time: 更新的时间
+        :param date: 更新的日期
         :param countries: 所有其他国家的Tag类型list
         :return:存有所有数据的dir list
         """
@@ -69,22 +87,19 @@ class Spider:
         封装的获取其他数据
         :return: 成功与否
         """
+        # 获取当前的网页
+        self.makeSoup()
         # 首先验证有没有今天的数据
         title = self.soup.find('span', class_="today-title", text="全球疫情")
         if title is None:
             raise NoDataException
 
         # 确定数据更新的日期
-        date_element = title.find_next_sibling('span', attrs={"class": "today-time"}) \
-                            .find_next_sibling('span', attrs={"class": "today-time"})
-        regex = re.compile(r'\d{4}-\d{2}-\d{2}')
-        date = str(regex.search(date_element.text).group())
-        regex = re.compile(r'\d{2}:\d{2}:\d{2}')
-        time = str(regex.search(date_element.text).group())
+        [date, time] = self.getUpdateTime(title)
 
         # 判断数据库中是否有当日数据
         database = self.db[self.OTHER_TABLE]
-        exists = database.find_one({"date": date})
+        exists = database.find_one({"country": "US", "date": date})
         if exists is None:
             # 当日数据不存在, 则需要插入
             # 获取所有其他国家数据的Tag list
@@ -93,7 +108,7 @@ class Spider:
             try:
                 database.insert_many(data)
             except Exception as e:
-                print("Something Wrong!", e)
+                print("Something Wrong in insert!", e)
                 return False
             return True
         else:
@@ -107,9 +122,57 @@ class Spider:
                     database.delete_many({"date": date})
                     database.insert_many(data)
                 except Exception as e:
-                    print("Something Wrong!", e)
+                    print("Something Wrong in update and insert!", e)
                     return False
                 return True
             else:
                 # 当日数据存在且数据更新时间相同
                 return True
+
+    def getProvinceChild(self, province):
+        """
+        输入省名获取child的Tag对象
+        :param province: 省名
+        :return: child的Tag list对象
+        """
+        temp = self.soup.find('span', attrs={"class": "area"}, text="北京")
+        if temp is None:
+            raise NoSuchProvinceException
+        try:
+            parent = temp.parent.parent
+            return parent.find_all('div', attrs={"class": "prod-city-block prod-city-block110000 close"})
+        except Exception:
+            raise NoDataException
+
+
+    def getProvinceDataList(self, cities):
+        """
+        返回所有cities的数据list
+        :param cities: 所有城市的Tag list
+        :return: list
+        """
+
+
+    def getProvinceData(self, province):
+        """
+        获取一个省的所有子数据，没有查询日期！
+        :param province: 省名
+        :return: list
+        """
+        # 获取当前的网页
+        self.makeSoup()
+
+        # 获取所有child
+        children = None
+        try:
+            children = self.getProvinceChild(province)
+        except NoSuchProvinceException as e:
+            print("没有想要查询的省份", e)
+            return False
+        except NoDataException as e:
+            print("div父子关系有误！", e)
+            return False
+
+
+
+
