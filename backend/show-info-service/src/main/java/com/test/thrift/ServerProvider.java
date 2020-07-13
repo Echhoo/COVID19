@@ -6,11 +6,13 @@ import org.apache.thrift.protocol.TBinaryProtocol;
 import org.apache.thrift.protocol.TProtocol;
 import org.apache.thrift.transport.*;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 /**
  * 用来调用爬虫服务的Server Client
  * @author balance
  */
+@Component
 public class ServerProvider {
 
     @Value("${thrift.spider.ip}")
