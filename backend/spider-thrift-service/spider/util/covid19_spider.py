@@ -31,7 +31,7 @@ class NoSuchProvinceException(Exception):
 class Spider:
 
     BASE_URL = "http://m.sinovision.net/newpneumonia.php"
-    client = pymongo.MongoClient(host='101.200.189.12', port=27017)
+    client = pymongo.MongoClient('mongodb://spider:spider007@101.200.189.12:27017/')
     db = client['COVID19Spider']
     CHINA_TABLE = "CHINA"
     CHINA_DETAIL_TABLE = "CHINA_DETAIL"
@@ -88,15 +88,18 @@ class Spider:
         :return: 成功与否
         """
         # 获取当前的网页
+        print("尝试爬取 %s 数据！" % self.OTHER_TABLE)
         self.makeSoup()
 
         # 首先验证有没有今天的数据
         title = self.soup.find('span', class_="today-title", text="全球疫情")
         if title is None:
             raise NoDataException
+        print("获取到链接，且今天有数据！")
 
         # 确定数据更新的日期
         [date, time] = self.getUpdateTime(title)
+        print("网页数据最后更新时间%s %s" % (date, time))
 
         # 判断数据库中是否有当日数据
         database = self.db[self.OTHER_TABLE]
@@ -104,30 +107,37 @@ class Spider:
         if exists is None:
             # 当日数据不存在, 则需要插入
             # 获取所有其他国家数据的Tag list
+            print("尝试插入数据")
             countries = title.find_all_next('div', attrs={"class": "prod"})
             data = self.getOtherCountriesData(countries, date, time)
+            print("insert", data)
             try:
                 database.insert_many(data)
             except Exception as e:
                 print("Something Wrong in insert!", e)
                 return False
+            print("插入成功！")
             return True
         else:
             # 当日数据存在, 则需要具体判断
             exists = database.find_one({"time": time})
             if exists is None:
                 # 当日数据存在, 但更新时间不同，则需要更新
+                print("尝试更新数据")
                 countries = title.find_all_next('div', attrs={"class": "prod"})
                 data = self.getOtherCountriesData(countries, date, time)
+                print("update", data)
                 try:
                     database.delete_many({"date": date})
                     database.insert_many(data)
                 except Exception as e:
                     print("Something Wrong in delete and insert!", e)
                     return False
+                print("更新成功！")
                 return True
             else:
                 # 当日数据存在且数据更新时间相同
+                print("网页更新时间与当前相同...\n什么都不需要做")
                 return True
 
     def getProvinceChild(self, province):
@@ -170,6 +180,7 @@ class Spider:
         :param province: 省名
         :return: 是否成功
         """
+        print("尝试爬取 %s 数据！" % self.CHINA_DETAIL_TABLE)
         # 获取当前的网页
         self.makeSoup()
 
@@ -177,12 +188,13 @@ class Spider:
         title = self.soup.find('span', class_="today-title", text="中国疫情")
         if title is None:
             raise NoDataException
+        print("获取到链接，且今天有数据！")
 
         # 确定数据更新的日期
         [date, time] = self.getUpdateTime(title)
+        print("网页数据最后更新时间\n%s %s" % (date, time))
 
         # 获取所有child
-        children = None
         try:
             children = self.getProvinceChild(province)
         except NoSuchProvinceException as e:
@@ -195,9 +207,9 @@ class Spider:
         # 判断数据库中是否有当日数据
         database = self.db[self.CHINA_DETAIL_TABLE]
         exists = database.find_one({"parent": province, "date": date})
-        print(date, time)
         if exists is None:
             # 当日数据不存在, 则需要插入
+            print("尝试插入数据")
             # 获取所有子数据数据的Tag list
             data = self.getProvinceDataList(children, province, date, time)
             print("insert", data)
@@ -206,12 +218,14 @@ class Spider:
             except Exception as e:
                 print("Something Wrong in insert!", e)
                 return False
+            print("插入成功！")
             return True
         else:
             # 当日数据存在, 则需要具体判断
             exists = database.find_one({"parent": province, "date": date, "time": time})
             if exists is None:
                 # 当日数据存在, 但更新时间不同，则需要更新
+                print("尝试更新数据")
                 data = self.getProvinceDataList(children, province, date, time)
                 print("update", data)
                 try:
@@ -220,8 +234,10 @@ class Spider:
                 except Exception as e:
                     print("Something Wrong in delete and insert!", e)
                     return False
+                print("更新成功！")
                 return True
             else:
                 # 当日数据存在且数据更新时间相同
+                print("网页更新时间与当前相同...\n什么都不需要做")
                 return True
 
