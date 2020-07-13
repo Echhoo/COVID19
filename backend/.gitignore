@@ -7,3 +7,6 @@
 
 # python 相关
 __pycache__/
+
+# java 相关
+target/
