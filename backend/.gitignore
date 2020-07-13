@@ -1,6 +1,7 @@
 .DS_Store
 
 /.idea/
+backend.iml
 
 # 虚拟环境
 /venv/

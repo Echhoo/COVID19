@@ -63,22 +63,22 @@ class Spider:
         time = str(regex.search(date_element.text).group())
         return [date, time]
 
-    def getOtherCountriesData(self, countries, date, time):
+    def getDataList(self, hosts, date, time):
         """
         将所有其他国家的书存入数据库
         :param time: 更新的时间
         :param date: 更新的日期
-        :param countries: 所有其他国家的Tag类型list
+        :param hosts: 所有其他国家的Tag类型list
         :return:存有所有数据的dir list
         """
         return [{
-            "country": country.contents[1].text,
-            "confirm": int(country.contents[3].text),
-            "dead": int(country.contents[5].text),
-            "cure": int(country.contents[7].text),
+            "name": host.contents[1].text,
+            "confirm": int(host.contents[3].text),
+            "dead": int(host.contents[5].text),
+            "cure": int(host.contents[7].text),
             "date": date,
             "time": time
-        } for country in countries]
+        } for host in hosts]
 
     def getOtherCountries(self):
         """
@@ -107,7 +107,7 @@ class Spider:
             # 获取所有其他国家数据的Tag list
             print("尝试插入数据")
             countries = title.find_all_next('div', attrs={"class": "prod"})
-            data = self.getOtherCountriesData(countries, date, time)
+            data = self.getDataList(countries, date, time)
             print("insert", data)
             try:
                 database.insert_many(data)
@@ -123,7 +123,7 @@ class Spider:
                 # 当日数据存在, 但更新时间不同，则需要更新
                 print("尝试更新数据")
                 countries = title.find_all_next('div', attrs={"class": "prod"})
-                data = self.getOtherCountriesData(countries, date, time)
+                data = self.getDataList(countries, date, time)
                 print("update", data)
                 try:
                     database.delete_many({"date": date})
@@ -164,7 +164,7 @@ class Spider:
         """
         return [{
             "parent": parent,
-            "city": city.contents[1].text,
+            "name": city.contents[1].text,
             "confirm": int(city.contents[3].text),
             "dead": int(city.contents[5].text),
             "cure": int(city.contents[7].text),
@@ -228,6 +228,65 @@ class Spider:
                 print("update", data)
                 try:
                     database.delete_many({"parent": province, "date": date})
+                    database.insert_many(data)
+                except Exception as e:
+                    print("Something Wrong in delete and insert!", e)
+                    return False
+                print("更新成功！")
+                return True
+            else:
+                # 当日数据存在且数据更新时间相同
+                print("网页更新时间与当前相同...\n什么都不需要做")
+                return True
+
+    def getChinaData(self):
+        """
+        获取一个中国所有省的子数据
+        :return: 是否成功
+        """
+        print("尝试爬取 %s 数据！" % self.CHINA_TABLE)
+        # 获取当前的网页
+        self.makeSoup()
+
+        # 首先验证有没有今天的数据
+        title = self.soup.find('span', class_="today-title", text="中国疫情")
+        if title is None:
+            raise NoDataException
+        print("获取到链接，且今天有数据！")
+
+        # 确定数据更新的日期
+        [date, time] = self.getUpdateTime(title)
+        print("网页数据最后更新时间\n%s %s" % (date, time))
+
+        # 获取所有数据
+        proviences = title.find_all_next('div', attrs={'class': 'prod'}, limit=34)
+
+        # 判断数据库中是否有当日数据
+        database = self.db[self.CHINA_TABLE]
+        exists = database.find_one({"date": date})
+        if exists is None:
+            # 当日数据不存在, 则需要插入
+            print("尝试插入数据")
+            # 获取所有子数据数据的Tag list
+            data = self.getDataList(proviences, date, time)
+            print("insert", data)
+            try:
+                database.insert_many(data)
+            except Exception as e:
+                print("Something Wrong in insert!", e)
+                return False
+            print("插入成功！")
+            return True
+        else:
+            # 当日数据存在, 则需要具体判断
+            exists = database.find_one({"date": date, "time": time})
+            if exists is None:
+                # 当日数据存在, 但更新时间不同，则需要更新
+                print("尝试更新数据")
+                data = self.getDataList(proviences, date, time)
+                print("update", data)
+                try:
+                    database.delete_many({"date": date})
                     database.insert_many(data)
                 except Exception as e:
                     print("Something Wrong in delete and insert!", e)
