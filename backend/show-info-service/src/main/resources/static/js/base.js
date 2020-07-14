@@ -101,7 +101,7 @@ $(function () {
             url: 'http://127.0.0.1:8887/data/china',
             dataType: 'json',
             success: function (result) {
-
+                console.log(result);
                 var dataList = []
 
                 $.each(result.RECORDS, function (index, item) {
