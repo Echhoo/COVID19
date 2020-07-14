@@ -1,0 +1,354 @@
+{
+  "RECORDS": [
+    {
+      "_id": "5f0bbdf289fba451224a66c4",
+      "city": "武汉",
+      "confirm": "50340",
+      "cure": "46471",
+      "date": "2020-07-13",
+      "dead": "3869",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66c5",
+      "city": "孝感",
+      "confirm": "3518",
+      "cure": "3389",
+      "date": "2020-07-13",
+      "dead": "129",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66c6",
+      "city": "黄冈",
+      "confirm": "2907",
+      "cure": "2782",
+      "date": "2020-07-13",
+      "dead": "125",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66c7",
+      "city": "荆州",
+      "confirm": "1580",
+      "cure": "1528",
+      "date": "2020-07-13",
+      "dead": "52",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66c8",
+      "city": "鄂州",
+      "confirm": "1394",
+      "cure": "1335",
+      "date": "2020-07-13",
+      "dead": "59",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66c9",
+      "city": "随州",
+      "confirm": "1307",
+      "cure": "1262",
+      "date": "2020-07-13",
+      "dead": "45",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66ca",
+      "city": "襄阳",
+      "confirm": "1175",
+      "cure": "1135",
+      "date": "2020-07-13",
+      "dead": "40",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66cb",
+      "city": "黄石",
+      "confirm": "1015",
+      "cure": "976",
+      "date": "2020-07-13",
+      "dead": "39",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66cc",
+      "city": "宜昌",
+      "confirm": "931",
+      "cure": "894",
+      "date": "2020-07-13",
+      "dead": "37",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66cd",
+      "city": "荆门",
+      "confirm": "928",
+      "cure": "887",
+      "date": "2020-07-13",
+      "dead": "41",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66ce",
+      "city": "咸宁",
+      "confirm": "836",
+      "cure": "821",
+      "date": "2020-07-13",
+      "dead": "15",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66cf",
+      "city": "十堰",
+      "confirm": "672",
+      "cure": "664",
+      "date": "2020-07-13",
+      "dead": "8",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66d0",
+      "city": "仙桃",
+      "confirm": "575",
+      "cure": "553",
+      "date": "2020-07-13",
+      "dead": "22",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66d1",
+      "city": "天门",
+      "confirm": "496",
+      "cure": "481",
+      "date": "2020-07-13",
+      "dead": "15",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66d2",
+      "city": "恩施州",
+      "confirm": "252",
+      "cure": "245",
+      "date": "2020-07-13",
+      "dead": "7",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66d3",
+      "city": "潜江",
+      "confirm": "198",
+      "cure": "189",
+      "date": "2020-07-13",
+      "dead": "9",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbdf289fba451224a66d4",
+      "city": "神农架林区",
+      "confirm": "11",
+      "cure": "11",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "湖北",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ff1",
+      "city": "丰台区",
+      "confirm": "273",
+      "cure": "3",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ff2",
+      "city": "大兴区",
+      "confirm": "104",
+      "cure": "16",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ff3",
+      "city": "海淀区",
+      "confirm": "82",
+      "cure": "0",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ff4",
+      "city": "朝阳区",
+      "confirm": "77",
+      "cure": "0",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ff5",
+      "city": "西城区",
+      "confirm": "59",
+      "cure": "0",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ff6",
+      "city": "外地来京",
+      "confirm": "25",
+      "cure": "2",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ff7",
+      "city": "昌平区",
+      "confirm": "30",
+      "cure": "10",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ff8",
+      "city": "通州区",
+      "confirm": "20",
+      "cure": "1",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ff9",
+      "city": "东城区",
+      "confirm": "19",
+      "cure": "1",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ffa",
+      "city": "房山区",
+      "confirm": "20",
+      "cure": "3",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ffb",
+      "city": "怀柔区",
+      "confirm": "7",
+      "cure": "0",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ffc",
+      "city": "密云区",
+      "confirm": "7",
+      "cure": "0",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ffd",
+      "city": "石景山区",
+      "confirm": "15",
+      "cure": "9",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8ffe",
+      "city": "门头沟区",
+      "confirm": "5",
+      "cure": "2",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c8fff",
+      "city": "延庆区",
+      "confirm": "1",
+      "cure": "0",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c9000",
+      "city": "境外输入",
+      "confirm": "174",
+      "cure": "174",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c9001",
+      "city": "顺义区",
+      "confirm": "10",
+      "cure": "10",
+      "date": "2020-07-13",
+      "dead": "0",
+      "parent": "北京",
+      "time": "09:02:02"
+    },
+    {
+      "_id": "5f0bbf0d2faa172d305c9002",
+      "city": "待明确地区",
+      "confirm": "1",
+      "cure": "463",
+      "date": "2020-07-13",
+      "dead": "9",
+      "parent": "北京",
+      "time": "09:02:02"
+    }
+  ]
+}

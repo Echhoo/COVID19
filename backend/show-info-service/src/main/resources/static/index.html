@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>COVID19分布图</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <style>
+        /* .t_btn {
+            margin-top: 20px;
+        }
+
+        .t_btn li {
+            display: inline-block;
+            margin: 0 0px 20px 20px;
+        } */
+
+        /* .t_btn button,
+        .t_a {
+            display: inline-block;
+            padding: 10px 5px;
+            width: 80px;
+            border-style: solid;
+            border-width: 0;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: bold;
+            line-height: normal;
+            margin: 0 0 0.5em 0;
+            position: relative;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            font-size: 1em;
+            background-color: #2C58A6;
+            border-color: #0263ff;
+            color: white;
+            box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset !important;
+            margin-right: 0.5em;
+            border-radius: 4px;
+        } */
+
+        /* .t_height {   返回按钮css
+            line-height: 80px;
+            position: absolute;
+            right: 28px;
+            top: 0;
+        } */
+    </style> -->
+
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="bg_header" display="block">
+            <div class="header_nav fl t_title">
+                COVID19分布图
+            </div>
+            <div class="header_time"style="text-align:center;">
+                <div class="time"style="color: white;font-size: x-large;">
+                    <p>数据更新至</p>
+                </div>
+                <div class="time" id="dateTime" style="color: white;font-size: x-large;"></div>
+            </div>
+
+        </div>
+        <div class="hd_nav" role="navigation" display="block">
+            <ul class=" nav nav-tabs nav-justified">
+            <li role="presentation" class="active"> <a class="t_btn0" data-toggle="tab"> 中国地图</a></li>
+            <li role="presentation"><a class="t_btn3" data-toggle="tab">世界地图</a></li>
+            </ul>
+        </div>
+        <!-- <div class="header_nav fl">
+        </div> -->
+        <!-- <div class="header_myself fr t_height">
+            <a class="t_a" href="../index.html">返回 &nbsp;</a>
+        </div> -->
+    </div>
+    <!--main-->
+    <div class="data_content">
+        <div class="data_main">
+
+            <!-- <div class="main_left fl"></div>
+                <div class="left_1">
+                    <ul class="t_btn">
+                        <li>
+                            <button class="t_btn0">中国地图</button>
+                        </li>
+                        <li>
+                            <button class="t_btn3">中国铁路</button>
+                        </li>
+                        <!-- <li>
+                            <button class="t_btn14">GPS</button>
+                        </li>
+                        <li>
+                            <button class="t_btn13">湖南省</button>
+                        </li>
+                        <li>
+                            <button class="t_btn2">湖南飞机场</button>
+                        </li>
+                        <li>
+                            <button class="t_btn4">湖南铁路</button>
+                        </li>
+                        <li>
+                            <button class="t_btn1">湖南公路</button>
+                        </li>
+                        <li>
+                            <button class="t_btn6">交通就业量</button>
+                        </li>
+                        <li>
+                            <button class="t_btn7">湖南货运量</button>
+                        </li>
+                        <li>
+                            <button class="t_btn5">各市货运量</button>
+                        </li>
+                        <li>
+                            <button class="t_btn8">货物周转量</button>
+                        </li>
+                        <li>
+                            <button class="t_btn9">运输线长度</button>
+                        </li>
+                        <li>
+                            <button class="t_btn10">湖南业务量</button>
+                        </li>
+                        <li>
+                            <button class="t_btn11">营运汽车</button>
+                        </li>
+                        <li>
+                            <button class="t_btn12">公共交通</button>
+                        </li> -->
+            <!-- </ul>
+                </div> -->
+            <!-- </div> -->
+            <div class="main_center fl">
+                <!-- 地图 -->
+                <div class="center_text t_cos0">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i>
+                        <i class="l_t_line"></i>
+                    </div>
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i>
+                        <i class="r_t_line"></i>
+                    </div>
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i>
+                        <i class="b_l_line"></i>
+                    </div>
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                        <i class="r_b_line"></i>
+                        <i class="b_r_line"></i>
+                    </div>
+                    <div class="main_title">
+                        中国地图
+                    </div>
+                    <div id="chart_map" style="width:100%;height:778px;"></div>
+                </div>
+                <!-- 铁路 -->
+                <div class="center_text t_cos3" style="display:none">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i>
+                        <i class="l_t_line"></i>
+                    </div>
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i>
+                        <i class="r_t_line"></i>
+                    </div>
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i>
+                        <i class="b_l_line"></i>
+                    </div>
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                        <i class="r_b_line"></i>
+                        <i class="b_r_line"></i>
+                    </div>
+                    <div class="main_title">
+                        世界地图
+                    </div>
+                    <div id="chart_world" style="width:100%;height:778px;"></div>
+                </div>
+
+            </div>
+            <div class="main_center fr">
+                <!-- 地图 -->
+                <div class="center_text t_cos0">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i>
+                        <i class="l_t_line"></i>
+                    </div>
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i>
+                        <i class="r_t_line"></i>
+                    </div>
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i>
+                        <i class="b_l_line"></i>
+                    </div>
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                        <i class="r_b_line"></i>
+                        <i class="b_r_line"></i>
+                    </div>
+                    <div class="main_title">
+                        条形图
+                    </div>
+                    <div id="chart_map_bar" class="chart" style="width:100%;height:778px;"></div>
+                </div>
+                <!-- 世界地图 -->
+                <div class="center_text t_cos3" style="display:none">
+                    <!--左上边框-->
+                    <div class="t_line_box">
+                        <i class="t_l_line"></i>
+                        <i class="l_t_line"></i>
+                    </div>
+                    <!--右上边框-->
+                    <div class="t_line_box">
+                        <i class="t_r_line"></i>
+                        <i class="r_t_line"></i>
+                    </div>
+                    <!--左下边框-->
+                    <div class="t_line_box">
+                        <i class="l_b_line"></i>
+                        <i class="b_l_line"></i>
+                    </div>
+                    <!--右下边框-->
+                    <div class="t_line_box">
+                        <i class="r_b_line"></i>
+                        <i class="b_r_line"></i>
+                    </div>
+                    <div class="main_title">
+                        条形图
+                    </div>
+                    <div id="chart_world_bar" class="chart" style="width:100%;height:778px;"></div>
+                </div>
+
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <!--
+    获得当前日期和时间
+    -->
+    <script>
+        Date.prototype.format = function (fmt) {
+            var o = {
+                "y+": this.getFullYear, //年
+                "M+": this.getMonth() + 1, //月份
+                "d+": this.getDate(), //日
+                "h+": this.getHours(), //小时
+                "m+": this.getMinutes(), //分
+                "s+": this.getSeconds() //秒
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+        setInterval("document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');", 1000);
+    </script>
+
+</body>
+<script>
+    $(function () {
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            // 获取已激活的标签页的名称
+            var activeTab = $(e.target).text();
+            // 获取前一个激活的标签页的名称
+            var previousTab = $(e.relatedTarget).text();
+            $(".active-tab span").html(activeTab);
+            $(".previous-tab span").html(previousTab);
+        });
+    });
+</script>
+
+<!-- 地图绘制必要的js -->
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<!-- <script src="http://api.map.baidu.com/api?v=2.0&ak=dApOtvB5E3x6byHpUGHbRF1fxctCBdjw"></script> -->
+<!-- 地理位置 -->
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+<!-- 百度API底图 -->
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=3VLr0NFD3DDKofy6lRTZ4aikIA7229FL"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/dataTool.js"></script>
+<script src="js/base.js"></script>
+<script src="js/china.js"></script>
+<script src="js/world.js"></script>
+<script src="js/hunan.js"></script>
+<script src="js/bmap.js"></script>
+<script src="js/echarts-all.js"></script>
+
+</html>
