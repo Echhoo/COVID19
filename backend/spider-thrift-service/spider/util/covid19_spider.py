@@ -63,6 +63,17 @@ class Spider:
         time = str(regex.search(date_element.text).group())
         return [date, time]
 
+    def setOldLatestNotLatest(self, db, fltr=None):
+        """
+        设置久的最新数据的latest字段为0（即不是最新）
+        :return: None
+        """
+        print("try to update latest data not latest!")
+        if fltr is None:
+            db.update_many({"latest": 1}, {"$set": {"latest": 0}})
+        else:
+            db.update_many(fltr, {"$set": {"latest": 0}})
+
     def getDataList(self, hosts, date, time):
         """
         将所有其他国家的书存入数据库
@@ -77,7 +88,8 @@ class Spider:
             "dead": int(host.contents[5].text),
             "cure": int(host.contents[7].text),
             "date": date,
-            "time": time
+            "time": time,
+            "latest": 1
         } for host in hosts]
 
     def getOtherCountries(self):
@@ -110,6 +122,7 @@ class Spider:
             data = self.getDataList(countries, date, time)
             print("insert", data)
             try:
+                self.setOldLatestNotLatest(database)
                 database.insert_many(data)
             except Exception as e:
                 print("Something Wrong in insert!", e)
@@ -126,6 +139,7 @@ class Spider:
                 data = self.getDataList(countries, date, time)
                 print("update", data)
                 try:
+                    self.setOldLatestNotLatest(database)
                     database.delete_many({"date": date})
                     database.insert_many(data)
                 except Exception as e:
@@ -169,7 +183,8 @@ class Spider:
             "dead": int(city.contents[5].text),
             "cure": int(city.contents[7].text),
             "date": date,
-            "time": time
+            "time": time,
+            "latest": 1
         } for city in cities]
 
     def getProvinceData(self, province):
@@ -212,6 +227,7 @@ class Spider:
             data = self.getProvinceDataList(children, province, date, time)
             print("insert", data)
             try:
+                self.setOldLatestNotLatest(database, fltr={"parent": province, "latest": 1})
                 database.insert_many(data)
             except Exception as e:
                 print("Something Wrong in insert!", e)
@@ -228,6 +244,7 @@ class Spider:
                 print("update", data)
                 try:
                     database.delete_many({"parent": province, "date": date})
+                    self.setOldLatestNotLatest(database, fltr={"parent": province, "latest": 1})
                     database.insert_many(data)
                 except Exception as e:
                     print("Something Wrong in delete and insert!", e)
@@ -271,6 +288,7 @@ class Spider:
             data = self.getDataList(proviences, date, time)
             print("insert", data)
             try:
+                self.setOldLatestNotLatest(database)
                 database.insert_many(data)
             except Exception as e:
                 print("Something Wrong in insert!", e)
@@ -287,6 +305,7 @@ class Spider:
                 print("update", data)
                 try:
                     database.delete_many({"date": date})
+                    self.setOldLatestNotLatest(database)
                     database.insert_many(data)
                 except Exception as e:
                     print("Something Wrong in delete and insert!", e)
