@@ -31,7 +31,7 @@ class NoSuchProvinceException(Exception):
 class Spider:
 
     BASE_URL = "http://m.sinovision.net/newpneumonia.php"
-    client = pymongo.MongoClient('mongodb://spider:spider007@101.200.189.12:27017/')
+    client = pymongo.MongoClient('mongodb://spider:spider007@127.0.0.1:27017/')
     db = client['COVID19Spider']
     CHINA_TABLE = "CHINA"
     CHINA_DETAIL_TABLE = "CHINA_DETAIL"
