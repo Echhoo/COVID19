@@ -1,9 +1,8 @@
 from thrift.protocol import TBinaryProtocol
-from thrift.server import TServer, TNonblockingServer
+from thrift.server import TNonblockingServer
 from thrift.transport import TSocket, TTransport
 
 from spider.api import SpiderService
-from spider.api.SpiderService import Iface
 
 # 爬虫实现
 from spider.util.covid19_spider import Spider
@@ -14,8 +13,6 @@ port = '9090'
 def main():
     # 1. 创建 Thrift Server 的 ServeSocket
     serverSocket = TSocket.TServerSocket(host=host, port=port)
-    # 2. 创建 Thrift Server 的 Transport = 帧传输方式
-    transportFactory = TTransport.TFramedTransportFactory()
     # 3. 创建 Thrift Server 的 Protocol = 二进制传输协议
     protocolFactory = TBinaryProtocol.TBinaryProtocolFactory()
     # 4. 创建 Thrift Server 提供的处理方法
