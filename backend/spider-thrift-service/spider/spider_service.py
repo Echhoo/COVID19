@@ -1,5 +1,5 @@
 from thrift.protocol import TBinaryProtocol
-from thrift.server import TServer
+from thrift.server import TServer, TNonblockingServer
 from thrift.transport import TSocket, TTransport
 
 from spider.api import SpiderService
@@ -23,16 +23,20 @@ def main():
     # from message.api import MessageService
     processor = SpiderService.Processor(handler)
     # 5. 创建 Thrift Server, 指明如何处理，监听什么端口，传输方式，传输协议
-    thriftServer = TServer.TSimpleServer(processor,
-                                         serverSocket,
-                                         transportFactory,
-                                         protocolFactory)
+    # thriftServer = TServer.TSimpleServer(processor,
+    #                                      serverSocket,
+    #                                      transportFactory,
+    #                                      protocolFactory)
+    thriftServer = TNonblockingServer.TNonblockingServer(processor,
+                                                         serverSocket,
+                                                         protocolFactory,
+                                                         protocolFactory)
     # 6. 启动 Thrift Server, 等待客户端的访问
     print("Python Thrift Spider Server Start ...")
     thriftServer.serve()
     print("Python Thrift Spider Server Stop ...")
 
-class SpiderServiceHandler(Iface):
+class SpiderServiceHandler:
 
     spider = None
 

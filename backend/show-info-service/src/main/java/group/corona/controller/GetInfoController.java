@@ -1,13 +1,12 @@
-package com.test.controller;
+package group.corona.controller;
 
-import com.test.domain.ChinaInfo;
-import com.test.domain.ProvinceInfo;
-import com.test.domain.WorldInfo;
-import com.test.service.GetInfoService;
-import com.test.thrift.ServerProvider;
+import group.corona.domain.ChinaInfo;
+import group.corona.domain.ProvinceInfo;
+import group.corona.domain.WorldInfo;
+import group.corona.service.GetInfoService;
+import group.corona.thrift.ServerProvider;
 import group.corona.thrift.spider.SpiderService;
 import org.apache.thrift.TException;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -40,7 +39,7 @@ public class GetInfoController {
         System.out.println("开始获取世界信息...");
         SpiderService.Iface spiderService = serverProvider.getSpiderService();
         try {
-            spiderService.updateOthersData();
+            System.out.println(spiderService.updateOthersData());
         } catch (TException e) {
             e.printStackTrace();
             return null;
@@ -59,7 +58,7 @@ public class GetInfoController {
         System.out.println("开始获取中国信息...");
         SpiderService.Iface spiderService = serverProvider.getSpiderService();
         try {
-            spiderService.updateChinaData();
+            System.out.println(spiderService.updateChinaData());
         } catch (TException e) {
             e.printStackTrace();
             return null;
@@ -70,7 +69,7 @@ public class GetInfoController {
 
     /**
      * 获取指定省的疫情信息
-     * @param province
+     * @param province: 省份信息
      * @return
      */
     @RequestMapping(value = "/province", method = RequestMethod.POST)
@@ -79,7 +78,7 @@ public class GetInfoController {
         System.out.println("开始获取省份信息");
         SpiderService.Iface spiderService = serverProvider.getSpiderService();
         try {
-            spiderService.updateChinaProvienceData(province);
+            System.out.println(spiderService.updateChinaProvienceData(province));
         } catch (TException e) {
             e.printStackTrace();
             return null;

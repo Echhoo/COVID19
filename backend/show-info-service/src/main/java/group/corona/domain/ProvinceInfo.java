@@ -1,13 +1,14 @@
-package com.test.domain;
+package group.corona.domain;
 
 import java.io.Serializable;
 
 /**
- * 保存中国各省的总体疫情信息
+ * 各省内的疫情信息实体类
  * @author balance
  */
-public class ChinaInfo implements Serializable {
+public class ProvinceInfo implements Serializable {
 
+    private String parent;
     private String name;
     private int confirm;
     private int dead;
@@ -15,12 +16,21 @@ public class ChinaInfo implements Serializable {
 
     @Override
     public String toString() {
-        return "ChinaInfo{" +
-                "name='" + name + '\'' +
+        return "ProvinceInfo{" +
+                "parent='" + parent + '\'' +
+                ", name='" + name + '\'' +
                 ", confirm=" + confirm +
                 ", dead=" + dead +
                 ", cure=" + cure +
                 '}';
+    }
+
+    public String getParent() {
+        return parent;
+    }
+
+    public void setParent(String parent) {
+        this.parent = parent;
     }
 
     public String getName() {
@@ -55,13 +65,14 @@ public class ChinaInfo implements Serializable {
         this.cure = cure;
     }
 
-    public ChinaInfo(String name, int confirm, int dead, int cure) {
+    public ProvinceInfo(String parent, String name, int confirm, int dead, int cure) {
+        this.parent = parent;
         this.name = name;
         this.confirm = confirm;
         this.dead = dead;
         this.cure = cure;
     }
 
-    public ChinaInfo() {
+    public ProvinceInfo() {
     }
 }

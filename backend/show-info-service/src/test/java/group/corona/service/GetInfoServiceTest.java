@@ -1,8 +1,8 @@
-package com.test.service;
+package group.corona.service;
 
-import com.test.domain.ChinaInfo;
-import com.test.domain.ProvinceInfo;
-import com.test.domain.WorldInfo;
+import group.corona.domain.ChinaInfo;
+import group.corona.domain.ProvinceInfo;
+import group.corona.domain.WorldInfo;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

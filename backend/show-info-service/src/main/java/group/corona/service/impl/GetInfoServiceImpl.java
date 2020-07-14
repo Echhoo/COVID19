@@ -1,10 +1,10 @@
-package com.test.service.impl;
+package group.corona.service.impl;
 
-import com.test.domain.ChinaInfo;
-import com.test.domain.ProvinceInfo;
-import com.test.domain.WorldInfo;
-import com.test.mapper.GetInfoMapper;
-import com.test.service.GetInfoService;
+import group.corona.domain.ChinaInfo;
+import group.corona.domain.ProvinceInfo;
+import group.corona.domain.WorldInfo;
+import group.corona.mapper.GetInfoMapper;
+import group.corona.service.GetInfoService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

@@ -1,18 +1,15 @@
-package com.test.mapper.impl;
+package group.corona.mapper.impl;
 
-import com.test.domain.ChinaInfo;
-import com.test.domain.ProvinceInfo;
-import com.test.domain.WorldInfo;
-import com.test.mapper.GetInfoMapper;
+import group.corona.domain.ChinaInfo;
+import group.corona.domain.ProvinceInfo;
+import group.corona.domain.WorldInfo;
+import group.corona.mapper.GetInfoMapper;
 import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 /**

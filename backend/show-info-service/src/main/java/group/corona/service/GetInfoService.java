@@ -1,16 +1,16 @@
-package com.test.mapper;
+package group.corona.service;
 
-import com.test.domain.ChinaInfo;
-import com.test.domain.ProvinceInfo;
-import com.test.domain.WorldInfo;
+import group.corona.domain.ChinaInfo;
+import group.corona.domain.ProvinceInfo;
+import group.corona.domain.WorldInfo;
 
 import java.util.List;
 
 /**
- * 疫情数据的dao层接口
+ * 获取疫情信息的service层接口
  * @author balance
  */
-public interface GetInfoMapper {
+public interface GetInfoService {
 
     /**
      * 获取中国各省的疫情信息

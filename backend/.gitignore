@@ -17,3 +17,4 @@ target/
 .idea/
 /show-info-service/show-info-service.iml
 /backend.iml
+*.iml

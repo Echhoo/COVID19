@@ -1,4 +1,4 @@
-package com.test.thrift;
+package group.corona.thrift;
 
 import group.corona.thrift.spider.SpiderService;
 import org.apache.thrift.TServiceClient;
