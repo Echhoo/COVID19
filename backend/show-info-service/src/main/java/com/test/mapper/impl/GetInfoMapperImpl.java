@@ -27,21 +27,19 @@ public class GetInfoMapperImpl implements GetInfoMapper {
 
     @Override
     public List<ChinaInfo> getChinaInfo() {
-        Date curDate = new Date();
-        DateFormat df = new SimpleDateFormat("yy-MM-dd");
-        String curDateString = df.format(curDate);
-        Query query = new Query(Criteria.where("date").is(curDateString));
+        Query query = new Query(Criteria.where("latest").is(1));
         return mongoTemplate.find(query, ChinaInfo.class, "CHINA");
     }
 
     @Override
     public List<WorldInfo> getWorldInfo() {
-        return mongoTemplate.findAll(WorldInfo.class, "OTHERS");
+        Query query = new Query(Criteria.where("latest").is(1));
+        return mongoTemplate.find(query, WorldInfo.class, "OTHERS");
     }
 
     @Override
     public List<ProvinceInfo> getProvinceInfo(String province) {
-        Query query = new Query(Criteria.where("parent").is(province));
+        Query query = new Query(Criteria.where("parent").is(province).and("latest").is(1));
         return mongoTemplate.find(query, ProvinceInfo.class, "CHINA_DETAIL");
     }
 }
