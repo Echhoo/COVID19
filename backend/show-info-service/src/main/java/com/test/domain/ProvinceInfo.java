@@ -9,20 +9,20 @@ import java.io.Serializable;
 public class ProvinceInfo implements Serializable {
 
     private String parent;
-    private String city;
+    private String name;
     private int confirm;
     private int dead;
     private int cure;
 
-    public ProvinceInfo(String parent, String city, int confirm, int dead, int cure) {
-        this.parent = parent;
-        this.city = city;
-        this.confirm = confirm;
-        this.dead = dead;
-        this.cure = cure;
-    }
-
-    public ProvinceInfo() {
+    @Override
+    public String toString() {
+        return "ProvinceInfo{" +
+                "parent='" + parent + '\'' +
+                ", name='" + name + '\'' +
+                ", confirm=" + confirm +
+                ", dead=" + dead +
+                ", cure=" + cure +
+                '}';
     }
 
     public String getParent() {
@@ -33,12 +33,12 @@ public class ProvinceInfo implements Serializable {
         this.parent = parent;
     }
 
-    public String getCity() {
-        return city;
+    public String getName() {
+        return name;
     }
 
-    public void setCity(String city) {
-        this.city = city;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getConfirm() {
@@ -65,14 +65,14 @@ public class ProvinceInfo implements Serializable {
         this.cure = cure;
     }
 
-    @Override
-    public String toString() {
-        return "ProvinceInfo{" +
-                "parent='" + parent + '\'' +
-                ", city='" + city + '\'' +
-                ", confirm=" + confirm +
-                ", dead=" + dead +
-                ", cure=" + cure +
-                '}';
+    public ProvinceInfo(String parent, String name, int confirm, int dead, int cure) {
+        this.parent = parent;
+        this.name = name;
+        this.confirm = confirm;
+        this.dead = dead;
+        this.cure = cure;
+    }
+
+    public ProvinceInfo() {
     }
 }

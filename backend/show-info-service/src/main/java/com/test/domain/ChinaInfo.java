@@ -8,27 +8,27 @@ import java.io.Serializable;
  */
 public class ChinaInfo implements Serializable {
 
-    private String province;
+    private String name;
     private int confirm;
     private int dead;
     private int cure;
 
-    public ChinaInfo(String province, int confirm, int dead, int cure) {
-        this.province = province;
-        this.confirm = confirm;
-        this.dead = dead;
-        this.cure = cure;
+    @Override
+    public String toString() {
+        return "ChinaInfo{" +
+                "name='" + name + '\'' +
+                ", confirm=" + confirm +
+                ", dead=" + dead +
+                ", cure=" + cure +
+                '}';
     }
 
-    public ChinaInfo() {
+    public String getName() {
+        return name;
     }
 
-    public String getProvince() {
-        return province;
-    }
-
-    public void setProvince(String province) {
-        this.province = province;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getConfirm() {
@@ -55,13 +55,13 @@ public class ChinaInfo implements Serializable {
         this.cure = cure;
     }
 
-    @Override
-    public String toString() {
-        return "ChinaInfo{" +
-                "province='" + province + '\'' +
-                ", confirm=" + confirm +
-                ", dead=" + dead +
-                ", cure=" + cure +
-                '}';
+    public ChinaInfo(String name, int confirm, int dead, int cure) {
+        this.name = name;
+        this.confirm = confirm;
+        this.dead = dead;
+        this.cure = cure;
+    }
+
+    public ChinaInfo() {
     }
 }

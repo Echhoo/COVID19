@@ -8,7 +8,7 @@ import java.io.Serializable;
  */
 public class WorldInfo implements Serializable {
 
-    private String country;
+    private String name;
     private int confirm;
     private int dead;
     private int cure;
@@ -16,19 +16,19 @@ public class WorldInfo implements Serializable {
     public WorldInfo() {
     }
 
-    public WorldInfo(String country, int confirm, int dead, int cure) {
-        this.country = country;
+    public WorldInfo(String name, int confirm, int dead, int cure) {
+        this.name = name;
         this.confirm = confirm;
         this.dead = dead;
         this.cure = cure;
     }
 
-    public String getCountry() {
-        return country;
+    public String getName() {
+        return name;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getConfirm() {
@@ -58,7 +58,7 @@ public class WorldInfo implements Serializable {
     @Override
     public String toString() {
         return "WorldInfo{" +
-                "country='" + country + '\'' +
+                "name='" + name + '\'' +
                 ", confirm=" + confirm +
                 ", dead=" + dead +
                 ", cure=" + cure +

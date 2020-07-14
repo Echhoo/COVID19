@@ -23,7 +23,7 @@ public class GetInfoServiceTest {
     public void getWorldInfoTest(){
         List<WorldInfo> worldInfo = getInfoService.getWorldInfo();
         for (WorldInfo info : worldInfo) {
-            System.out.println(info.getCountry()+" --> "+info.getConfirm());
+            System.out.println(info);
         }
     }
 
@@ -32,7 +32,7 @@ public class GetInfoServiceTest {
         String province = "北京";
         List<ProvinceInfo> provinceInfo = getInfoService.getProvinceInfo(province);
         for (ProvinceInfo info : provinceInfo) {
-            System.out.println(info.getCity()+" --> "+info.getConfirm());
+            System.out.println(info);
         }
 
     }

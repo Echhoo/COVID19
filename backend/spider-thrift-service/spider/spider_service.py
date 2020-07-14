@@ -8,7 +8,7 @@ from spider.api.SpiderService import Iface
 # 爬虫实现
 from spider.util.covid19_spider import Spider
 
-host = 'localhost'
+host = '127.0.0.1'
 port = '9090'
 
 def main():
