@@ -11,3 +11,9 @@ __pycache__/
 
 # java 相关
 target/
+
+#idea相关
+/spider-thrift-service-api/spider-thrift-service-api.iml
+.idea/
+/show-info-service/show-info-service.iml
+/backend.iml
