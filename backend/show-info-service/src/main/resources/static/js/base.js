@@ -101,16 +101,15 @@ $(function () {
             url: 'http://127.0.0.1:8887/data/china',
             dataType: 'json',
             success: function (result) {
-                console.log(result);
                 var dataList = []
 
-                $.each(result.RECORDS, function (index, item) {
+                $.each(result, function (index, item) {
                     // alert(index + item.country + item.confirm);
                     dataList.push({ name: item.name, value: item.confirm })
                     // names.push(item.country);
                     // nums.push(item.confirm);
                 });
-
+                console.log(dataList)
                 myChart.hideLoading();
                 myChart.setOption({
                     series: [{
@@ -145,7 +144,7 @@ $(function () {
         var option = {
             title: {
                 text: '中国各省现有确诊数据',
-                subtext: '统计数据来自猫眼电影',
+                subtext: '统计数据来自http://m.sinovision.net/newpneumonia.php',
                 // sublink: 'https://maoyan.com/',
                 left: 'center',
                 align: 'right',
@@ -243,7 +242,7 @@ $(function () {
                 var nums=[]
                 var dataList = []
 
-                $.each(result.RECORDS, function (index, item) {
+                $.each(result, function (index, item) {
                     // alert(index + item.name + item.confirm);
                     // dataList.push({ name: item.name, value: item.confirm })
                     names.push(item.name);
@@ -407,9 +406,9 @@ $(function () {
 
                 var dataList = []
 
-                $.each(result.RECORDS, function (index, item) {
+                $.each(result, function (index, item) {
                     // alert(index + item.country + item.confirm);
-                    dataList.push({ name: item.country, value: item.confirm })
+                    dataList.push({ name: item.name, value: item.confirm })
                     // names.push(item.country);
                     // nums.push(item.confirm);
                 });
@@ -572,10 +571,10 @@ $(function () {
 
                 var dataList = []
 
-                $.each(result.RECORDS, function (index, item) {
+                $.each(result, function (index, item) {
                     // alert(index + item.country + item.confirm);
                     // dataList.push({ name: item.country, value: item.confirm })
-                    names.push(item.country);
+                    names.push(item.name);
                     nums.push(item.cure);
                 });
 
