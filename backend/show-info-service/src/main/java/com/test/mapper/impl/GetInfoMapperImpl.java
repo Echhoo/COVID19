@@ -10,6 +10,9 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -24,7 +27,11 @@ public class GetInfoMapperImpl implements GetInfoMapper {
 
     @Override
     public List<ChinaInfo> getChinaInfo() {
-        return mongoTemplate.findAll(ChinaInfo.class, "CHINA");
+        Date curDate = new Date();
+        DateFormat df = new SimpleDateFormat("yy-MM-dd");
+        String curDateString = df.format(curDate);
+        Query query = new Query(Criteria.where("date").is(curDateString));
+        return mongoTemplate.find(query, ChinaInfo.class, "CHINA");
     }
 
     @Override

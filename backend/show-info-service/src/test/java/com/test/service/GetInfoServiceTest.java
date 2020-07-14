@@ -1,5 +1,6 @@
 package com.test.service;
 
+import com.test.domain.ChinaInfo;
 import com.test.domain.ProvinceInfo;
 import com.test.domain.WorldInfo;
 import org.junit.jupiter.api.Test;
@@ -16,7 +17,10 @@ public class GetInfoServiceTest {
 
     @Test
     public void getChinaInfoTest(){
-
+        List<ChinaInfo> chinaInfo = getInfoService.getChinaInfo();
+        for (ChinaInfo info : chinaInfo) {
+            System.out.println(info);
+        }
     }
 
     @Test
