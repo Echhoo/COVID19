@@ -152,6 +152,12 @@ $(function () {
                 backgroundColor: 'Gray',
                 borderColor: 'white'
             },
+            // grid:{
+            //     x:50,
+            //     y:50,
+            //     x2:50,
+            //     y2:70
+            // },
             tooltip: {
                 trigger: 'axis',
                 axisPointer: {
@@ -177,7 +183,7 @@ $(function () {
                     show: true,
                     realtime: true,
                     start: 0,
-                    end: 1
+                    end: 0.6
                 },
                 {
                     type: 'inside',
@@ -619,54 +625,6 @@ $(function () {
         $('.t_cos3').css('display', 'block');
         echart_world();
         echart_world_bar();
-    });
-
-
-    $('.t_btn1').click(function () {
-        $('.center_text').css('display', 'none');
-        $('.t_cos1').css('display', 'block');
-        echart_2();
-    });
-    $('.t_btn2').click(function () {
-        $('.center_text').css('display', 'none');
-        $('.t_cos2').css('display', 'block');
-        echart_0();
-    });
-
-    $('.t_btn4').click(function () {
-        $('.center_text').css('display', 'none');
-        $('.t_cos6').css('display', 'block');
-        echart_6();
-    });
-    $('.t_btn5').click(function () {
-        $('.center_text').css('display', 'none');
-        $('.t_cos4').css('display', 'block');
-        echart_1();
-    });
-    $('.t_btn6').click(function () {
-        $('.center_text').css('display', 'none');
-        $('.t_cos5').css('display', 'block');
-        echart_3();
-    });
-    $('.t_btn7').click(function () {
-        $('.center_text').css('display', 'none');
-        $('.t_cos7').css('display', 'block');
-        echart_7();
-    });
-    $('.t_btn8').click(function () {
-        $('.center_text').css('display', 'none');
-        $('.t_cos8').css('display', 'block');
-        echart_8();
-    });
-    $('.t_btn9').click(function () {
-        $('.center_text').css('display', 'none');
-        $('.t_cos9').css('display', 'block');
-        echart_9();
-    });
-    $('.t_btn10').click(function () {
-        $('.center_text').css('display', 'none');
-        $('.t_cos10').css('display', 'block');
-        echart_10();
     });
 
     //获取地址栏参数
