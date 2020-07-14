@@ -43,7 +43,7 @@ class SpiderServiceHandler(Iface):
         return self.spider.getOtherCountries()
 
     def updateChinaData(self):
-        pass
+        return self.spider.getChinaData()
 
     def updateChinaProvienceData(self, provience):
         return self.spider.getProvinceData(provience)
