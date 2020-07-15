@@ -1,0 +1,2584 @@
+{
+  "RECORDS": [
+    {
+      "confirm": "3376421",
+      "country": "US",
+      "cure": "956157",
+      "dead": "137371"
+    },
+    {
+      "confirm": "1866176",
+      "country": "Brazil",
+      "cure": "1213512",
+      "dead": "72151"
+    },
+    {
+      "confirm": "879466",
+      "country": "India",
+      "cure": "554429",
+      "dead": "23187"
+    },
+    {
+      "confirm": "727162",
+      "country": "Russia",
+      "cure": "501061",
+      "dead": "11335"
+    },
+    {
+      "confirm": "326326",
+      "country": "Peru",
+      "cure": "217111",
+      "dead": "11870"
+    },
+    {
+      "confirm": "315041",
+      "country": "Chile",
+      "cure": "283902",
+      "dead": "6979"
+    },
+    {
+      "confirm": "300988",
+      "country": "Spain",
+      "cure": "-1",
+      "dead": "28403"
+    },
+    {
+      "confirm": "299750",
+      "country": "Mexico",
+      "cure": "184764",
+      "dead": "35006"
+    },
+    {
+      "confirm": "289603",
+      "country": "UK",
+      "cure": "-1",
+      "dead": "44819"
+    },
+    {
+      "confirm": "276242",
+      "country": "South Africa",
+      "cure": "134874",
+      "dead": "4079"
+    },
+    {
+      "confirm": "257303",
+      "country": "Iran",
+      "cure": "219993",
+      "dead": "12829"
+    },
+    {
+      "confirm": "248872",
+      "country": "Pakistan",
+      "cure": "156700",
+      "dead": "5197"
+    },
+    {
+      "confirm": "243061",
+      "country": "Italy",
+      "cure": "194928",
+      "dead": "34954"
+    },
+    {
+      "confirm": "232259",
+      "country": "Saudi Arabia",
+      "cure": "167138",
+      "dead": "2223"
+    },
+    {
+      "confirm": "212993",
+      "country": "Turkey",
+      "cure": "194515",
+      "dead": "5363"
+    },
+    {
+      "confirm": "199950",
+      "country": "Germany",
+      "cure": "184600",
+      "dead": "9134"
+    },
+    {
+      "confirm": "183795",
+      "country": "Bangladesh",
+      "cure": "93614",
+      "dead": "2352"
+    },
+    {
+      "confirm": "170752",
+      "country": "France",
+      "cure": "78388",
+      "dead": "30004"
+    },
+    {
+      "confirm": "150445",
+      "country": "Colombia",
+      "cure": "63451",
+      "dead": "5307"
+    },
+    {
+      "confirm": "107590",
+      "country": "Canada",
+      "cure": "71467",
+      "dead": "8783"
+    },
+    {
+      "confirm": "103598",
+      "country": "Qatar",
+      "cure": "99743",
+      "dead": "147"
+    },
+    {
+      "confirm": "100166",
+      "country": "Argentina",
+      "cure": "42694",
+      "dead": "1845"
+    },
+    {
+      "confirm": "83602",
+      "country": "Mainland China",
+      "cure": "78648",
+      "dead": "4634"
+    },
+    {
+      "confirm": "82070",
+      "country": "Egypt",
+      "cure": "24419",
+      "dead": "3858"
+    },
+    {
+      "confirm": "77506",
+      "country": "Iraq",
+      "cure": "44724",
+      "dead": "3150"
+    },
+    {
+      "confirm": "75699",
+      "country": "Indonesia",
+      "cure": "35638",
+      "dead": "3606"
+    },
+    {
+      "confirm": "74898",
+      "country": "Sweden",
+      "cure": "-1",
+      "dead": "5526"
+    },
+    {
+      "confirm": "67870",
+      "country": "Ecuador",
+      "cure": "30283",
+      "dead": "5047"
+    },
+    {
+      "confirm": "64932",
+      "country": "Belarus",
+      "cure": "55380",
+      "dead": "464"
+    },
+    {
+      "confirm": "62707",
+      "country": "Belgium",
+      "cure": "17196",
+      "dead": "9782"
+    },
+    {
+      "confirm": "58253",
+      "country": "Kazakhstan",
+      "cure": "33814",
+      "dead": "375"
+    },
+    {
+      "confirm": "56259",
+      "country": "Philippines",
+      "cure": "16046",
+      "dead": "1534"
+    },
+    {
+      "confirm": "56015",
+      "country": "Oman",
+      "cure": "36098",
+      "dead": "257"
+    },
+    {
+      "confirm": "54894",
+      "country": "Kuwait",
+      "cure": "44610",
+      "dead": "390"
+    },
+    {
+      "confirm": "54854",
+      "country": "United Arab Emirates",
+      "cure": "45140",
+      "dead": "333"
+    },
+    {
+      "confirm": "53521",
+      "country": "Ukraine",
+      "cure": "26118",
+      "dead": "1383"
+    },
+    {
+      "confirm": "51022",
+      "country": "Netherlands",
+      "cure": "-1",
+      "dead": "6137"
+    },
+    {
+      "confirm": "48187",
+      "country": "Bolivia",
+      "cure": "14843",
+      "dead": "1807"
+    },
+    {
+      "confirm": "46512",
+      "country": "Portugal",
+      "cure": "30907",
+      "dead": "1660"
+    },
+    {
+      "confirm": "45961",
+      "country": "Singapore",
+      "cure": "42285",
+      "dead": "26"
+    },
+    {
+      "confirm": "45633",
+      "country": "Panama",
+      "cure": "23039",
+      "dead": "909"
+    },
+    {
+      "confirm": "44532",
+      "country": "Dominican Republic",
+      "cure": "21459",
+      "dead": "897"
+    },
+    {
+      "confirm": "38670",
+      "country": "Israel",
+      "cure": "19008",
+      "dead": "362"
+    },
+    {
+      "confirm": "37891",
+      "country": "Poland",
+      "cure": "27148",
+      "dead": "1571"
+    },
+    {
+      "confirm": "34451",
+      "country": "Afghanistan",
+      "cure": "21216",
+      "dead": "1010"
+    },
+    {
+      "confirm": "32941",
+      "country": "Bahrain",
+      "cure": "28425",
+      "dead": "108"
+    },
+    {
+      "confirm": "32883",
+      "country": "Switzerland",
+      "cure": "29600",
+      "dead": "1968"
+    },
+    {
+      "confirm": "32558",
+      "country": "Nigeria",
+      "cure": "13447",
+      "dead": "740"
+    },
+    {
+      "confirm": "32535",
+      "country": "Romania",
+      "cure": "21545",
+      "dead": "1884"
+    },
+    {
+      "confirm": "31969",
+      "country": "Armenia",
+      "cure": "19633",
+      "dead": "565"
+    },
+    {
+      "confirm": "29355",
+      "country": "Guatemala",
+      "cure": "4214",
+      "dead": "1219"
+    },
+    {
+      "confirm": "28090",
+      "country": "Honduras",
+      "cure": "2957",
+      "dead": "774"
+    },
+    {
+      "confirm": "25628",
+      "country": "Ireland",
+      "cure": "23364",
+      "dead": "1746"
+    },
+    {
+      "confirm": "24518",
+      "country": "Ghana",
+      "cure": "20187",
+      "dead": "139"
+    },
+    {
+      "confirm": "24041",
+      "country": "Azerbaijan",
+      "cure": "15093",
+      "dead": "306"
+    },
+    {
+      "confirm": "21502",
+      "country": "Japan",
+      "cure": "18003",
+      "dead": "982"
+    },
+    {
+      "confirm": "19382",
+      "country": "Moldova",
+      "cure": "12667",
+      "dead": "642"
+    },
+    {
+      "confirm": "19195",
+      "country": "Algeria",
+      "cure": "13743",
+      "dead": "1011"
+    },
+    {
+      "confirm": "18897",
+      "country": "Austria",
+      "cure": "16952",
+      "dead": "708"
+    },
+    {
+      "confirm": "18360",
+      "country": "Serbia",
+      "cure": "13876",
+      "dead": "393"
+    },
+    {
+      "confirm": "16801",
+      "country": "Nepal",
+      "cure": "8589",
+      "dead": "38"
+    },
+    {
+      "confirm": "15745",
+      "country": "Morocco",
+      "cure": "12283",
+      "dead": "250"
+    },
+    {
+      "confirm": "15173",
+      "country": "Cameroon",
+      "cure": "11928",
+      "dead": "359"
+    },
+    {
+      "confirm": "13479",
+      "country": "South Korea",
+      "cure": "12204",
+      "dead": "289"
+    },
+    {
+      "confirm": "13174",
+      "country": "Czech Republic",
+      "cure": "8247",
+      "dead": "352"
+    },
+    {
+      "confirm": "12997",
+      "country": "Uzbekistan",
+      "cure": "7852",
+      "dead": "60"
+    },
+    {
+      "confirm": "12946",
+      "country": "Denmark",
+      "cure": "12077",
+      "dead": "609"
+    },
+    {
+      "confirm": "12766",
+      "country": "Ivory Coast",
+      "cure": "6654",
+      "dead": "84"
+    },
+    {
+      "confirm": "10629",
+      "country": "Kyrgyzstan",
+      "cure": "3387",
+      "dead": "132"
+    },
+    {
+      "confirm": "10250",
+      "country": "Sudan",
+      "cure": "5341",
+      "dead": "650"
+    },
+    {
+      "confirm": "10105",
+      "country": "Kenya",
+      "cure": "2881",
+      "dead": "185"
+    },
+    {
+      "confirm": "9980",
+      "country": "Australia",
+      "cure": "7768",
+      "dead": "108"
+    },
+    {
+      "confirm": "9674",
+      "country": "El Salvador",
+      "cure": "5634",
+      "dead": "260"
+    },
+    {
+      "confirm": "9465",
+      "country": "Venezuela",
+      "cure": "2671",
+      "dead": "89"
+    },
+    {
+      "confirm": "8981",
+      "country": "Norway",
+      "cure": "8138",
+      "dead": "252"
+    },
+    {
+      "confirm": "8718",
+      "country": "Malaysia",
+      "cure": "8519",
+      "dead": "122"
+    },
+    {
+      "confirm": "8135",
+      "country": "Senegal",
+      "cure": "5446",
+      "dead": "148"
+    },
+    {
+      "confirm": "8111",
+      "country": "North Macedonia",
+      "cure": "4203",
+      "dead": "382"
+    },
+    {
+      "confirm": "8033",
+      "country": "DRC",
+      "cure": "3615",
+      "dead": "189"
+    },
+    {
+      "confirm": "7596",
+      "country": "Costa Rica",
+      "cure": "2239",
+      "dead": "30"
+    },
+    {
+      "confirm": "7560",
+      "country": "Ethiopia",
+      "cure": "2430",
+      "dead": "127"
+    },
+    {
+      "confirm": "7294",
+      "country": "Finland",
+      "cure": "6800",
+      "dead": "329"
+    },
+    {
+      "confirm": "7252",
+      "country": "Bulgaria",
+      "cure": "3319",
+      "dead": "268"
+    },
+    {
+      "confirm": "6877",
+      "country": "Bosnia and Herzegovina",
+      "cure": "3115",
+      "dead": "221"
+    },
+    {
+      "confirm": "6690",
+      "country": "Haiti",
+      "cure": "2590",
+      "dead": "139"
+    },
+    {
+      "confirm": "6552",
+      "country": "Tajikistan",
+      "cure": "5228",
+      "dead": "55"
+    },
+    {
+      "confirm": "6230",
+      "country": "Palestine",
+      "cure": "942",
+      "dead": "36"
+    },
+    {
+      "confirm": "6141",
+      "country": "Guinea",
+      "cure": "4862",
+      "dead": "37"
+    },
+    {
+      "confirm": "5949",
+      "country": "French Guiana",
+      "cure": "2981",
+      "dead": "26"
+    },
+    {
+      "confirm": "5942",
+      "country": "Gabon",
+      "cure": "3004",
+      "dead": "46"
+    },
+    {
+      "confirm": "5355",
+      "country": "Mauritania",
+      "cure": "2363",
+      "dead": "147"
+    },
+    {
+      "confirm": "4972",
+      "country": "Djibouti",
+      "cure": "4712",
+      "dead": "56"
+    },
+    {
+      "confirm": "4925",
+      "country": "Luxembourg",
+      "cure": "4086",
+      "dead": "111"
+    },
+    {
+      "confirm": "4867",
+      "country": "Madagascar",
+      "cure": "2378",
+      "dead": "35"
+    },
+    {
+      "confirm": "4288",
+      "country": "CAR",
+      "cure": "1145",
+      "dead": "53"
+    },
+    {
+      "confirm": "4234",
+      "country": "Hungary",
+      "cure": "3036",
+      "dead": "595"
+    },
+    {
+      "confirm": "3803",
+      "country": "Greece",
+      "cure": "1374",
+      "dead": "193"
+    },
+    {
+      "confirm": "3722",
+      "country": "Croatia",
+      "cure": "2486",
+      "dead": "119"
+    },
+    {
+      "confirm": "3454",
+      "country": "Albania",
+      "cure": "1946",
+      "dead": "93"
+    },
+    {
+      "confirm": "3217",
+      "country": "Thailand",
+      "cure": "3088",
+      "dead": "58"
+    },
+    {
+      "confirm": "3071",
+      "country": "Equatorial Guinea",
+      "cure": "842",
+      "dead": "51"
+    },
+    {
+      "confirm": "3059",
+      "country": "Somalia",
+      "cure": "1264",
+      "dead": "93"
+    },
+    {
+      "confirm": "2948",
+      "country": "Paraguay",
+      "cure": "1275",
+      "dead": "22"
+    },
+    {
+      "confirm": "2846",
+      "country": "Nicaragua",
+      "cure": "1993",
+      "dead": "91"
+    },
+    {
+      "confirm": "2731",
+      "country": "Maldives",
+      "cure": "2284",
+      "dead": "13"
+    },
+    {
+      "confirm": "2711",
+      "country": "Mayotte",
+      "cure": "2480",
+      "dead": "37"
+    },
+    {
+      "confirm": "2617",
+      "country": "Sri Lanka",
+      "cure": "1981",
+      "dead": "11"
+    },
+    {
+      "confirm": "2426",
+      "country": "Cuba",
+      "cure": "2258",
+      "dead": "87"
+    },
+    {
+      "confirm": "2411",
+      "country": "Mali",
+      "cure": "1694",
+      "dead": "121"
+    },
+    {
+      "confirm": "2364",
+      "country": "Malawi",
+      "cure": "557",
+      "dead": "38"
+    },
+    {
+      "confirm": "2334",
+      "country": "Lebanon",
+      "cure": "1420",
+      "dead": "36"
+    },
+    {
+      "confirm": "2028",
+      "country": "Congo",
+      "cure": "589",
+      "dead": "47"
+    },
+    {
+      "confirm": "2021",
+      "country": "South Sudan",
+      "cure": "333",
+      "dead": "38"
+    },
+    {
+      "confirm": "2014",
+      "country": "Estonia",
+      "cure": "1895",
+      "dead": "69"
+    },
+    {
+      "confirm": "1901",
+      "country": "Slovakia",
+      "cure": "1493",
+      "dead": "28"
+    },
+    {
+      "confirm": "1896",
+      "country": "Iceland",
+      "cure": "1865",
+      "dead": "10"
+    },
+    {
+      "confirm": "1895",
+      "country": "Zambia",
+      "cure": "1412",
+      "dead": "42"
+    },
+    {
+      "confirm": "1869",
+      "country": "Lithuania",
+      "cure": "1571",
+      "dead": "79"
+    },
+    {
+      "confirm": "1842",
+      "country": "Guinea-Bissau",
+      "cure": "773",
+      "dead": "26"
+    },
+    {
+      "confirm": "1841",
+      "country": "Slovenia",
+      "cure": "1469",
+      "dead": "111"
+    },
+    {
+      "confirm": "1635",
+      "country": "Sierra Leone",
+      "cure": "1154",
+      "dead": "63"
+    },
+    {
+      "confirm": "1623",
+      "country": "Cabo Verde",
+      "cure": "748",
+      "dead": "19"
+    },
+    {
+      "confirm": "1544",
+      "country": "New Zealand",
+      "cure": "1497",
+      "dead": "22"
+    },
+    {
+      "confirm": "1470",
+      "country": "Hong Kong",
+      "cure": "1214",
+      "dead": "7"
+    },
+    {
+      "confirm": "1465",
+      "country": "Yemen",
+      "cure": "659",
+      "dead": "417"
+    },
+    {
+      "confirm": "1433",
+      "country": "Libya",
+      "cure": "341",
+      "dead": "39"
+    },
+    {
+      "confirm": "1378",
+      "country": "Benin",
+      "cure": "557",
+      "dead": "26"
+    },
+    {
+      "confirm": "1351",
+      "country": "Eswatini",
+      "cure": "668",
+      "dead": "20"
+    },
+    {
+      "confirm": "1337",
+      "country": "Rwanda",
+      "cure": "684",
+      "dead": "4"
+    },
+    {
+      "confirm": "1263",
+      "country": "Tunisia",
+      "cure": "1076",
+      "dead": "50"
+    },
+    {
+      "confirm": "1221",
+      "country": "Montenegro",
+      "cure": "325",
+      "dead": "23"
+    },
+    {
+      "confirm": "1179",
+      "country": "Jordan",
+      "cure": "997",
+      "dead": "10"
+    },
+    {
+      "confirm": "1173",
+      "country": "Latvia",
+      "cure": "1019",
+      "dead": "30"
+    },
+    {
+      "confirm": "1157",
+      "country": "Mozambique",
+      "cure": "364",
+      "dead": "9"
+    },
+    {
+      "confirm": "1099",
+      "country": "Niger",
+      "cure": "992",
+      "dead": "68"
+    },
+    {
+      "confirm": "1036",
+      "country": "Burkina Faso",
+      "cure": "869",
+      "dead": "53"
+    },
+    {
+      "confirm": "1025",
+      "country": "Uganda",
+      "cure": "972",
+      "dead": "0"
+    },
+    {
+      "confirm": "1021",
+      "country": "Cyprus",
+      "cure": "839",
+      "dead": "19"
+    },
+    {
+      "confirm": "1010",
+      "country": "Liberia",
+      "cure": "423",
+      "dead": "51"
+    },
+    {
+      "confirm": "987",
+      "country": "Uruguay",
+      "cure": "896",
+      "dead": "31"
+    },
+    {
+      "confirm": "986",
+      "country": "Georgia",
+      "cure": "857",
+      "dead": "15"
+    },
+    {
+      "confirm": "985",
+      "country": "Zimbabwe",
+      "cure": "328",
+      "dead": "18"
+    },
+    {
+      "confirm": "880",
+      "country": "Chad",
+      "cure": "790",
+      "dead": "75"
+    },
+    {
+      "confirm": "855",
+      "country": "Andorra",
+      "cure": "803",
+      "dead": "52"
+    },
+    {
+      "confirm": "785",
+      "country": "Namibia",
+      "cure": "26",
+      "dead": "1"
+    },
+    {
+      "confirm": "758",
+      "country": "Jamaica",
+      "cure": "620",
+      "dead": "10"
+    },
+    {
+      "confirm": "741",
+      "country": "Suriname",
+      "cure": "495",
+      "dead": "18"
+    },
+    {
+      "confirm": "729",
+      "country": "Sao Tome and Principe",
+      "cure": "286",
+      "dead": "14"
+    },
+    {
+      "confirm": "720",
+      "country": "Togo",
+      "cure": "513",
+      "dead": "15"
+    },
+    {
+      "confirm": "712",
+      "country": "Diamond Princess Cruise",
+      "cure": "651",
+      "dead": "13"
+    },
+    {
+      "confirm": "699",
+      "country": "San Marino",
+      "cure": "656",
+      "dead": "42"
+    },
+    {
+      "confirm": "674",
+      "country": "Malta",
+      "cure": "660",
+      "dead": "9"
+    },
+    {
+      "confirm": "593",
+      "country": "Réunion",
+      "cure": "472",
+      "dead": "3"
+    },
+    {
+      "confirm": "577",
+      "country": "Channel Islands",
+      "cure": "512",
+      "dead": "47"
+    },
+    {
+      "confirm": "509",
+      "country": "Tanzania",
+      "cure": "183",
+      "dead": "21"
+    },
+    {
+      "confirm": "483",
+      "country": "Angola",
+      "cure": "118",
+      "dead": "25"
+    },
+    {
+      "confirm": "451",
+      "country": "Taiwan",
+      "cure": "438",
+      "dead": "7"
+    },
+    {
+      "confirm": "399",
+      "country": "Botswana",
+      "cure": "38",
+      "dead": "1"
+    },
+    {
+      "confirm": "394",
+      "country": "Syria",
+      "cure": "126",
+      "dead": "16"
+    },
+    {
+      "confirm": "372",
+      "country": "Vietnam",
+      "cure": "350",
+      "dead": "0"
+    },
+    {
+      "confirm": "342",
+      "country": "Mauritius",
+      "cure": "330",
+      "dead": "10"
+    },
+    {
+      "confirm": "336",
+      "country": "Isle of Man",
+      "cure": "312",
+      "dead": "24"
+    },
+    {
+      "confirm": "331",
+      "country": "Myanmar",
+      "cure": "261",
+      "dead": "6"
+    },
+    {
+      "confirm": "317",
+      "country": "Comoros",
+      "cure": "296",
+      "dead": "7"
+    },
+    {
+      "confirm": "297",
+      "country": "Guyana",
+      "cure": "154",
+      "dead": "17"
+    },
+    {
+      "confirm": "255",
+      "country": "Martinique",
+      "cure": "98",
+      "dead": "15"
+    },
+    {
+      "confirm": "233",
+      "country": "Lesotho",
+      "cure": "32",
+      "dead": "2"
+    },
+    {
+      "confirm": "232",
+      "country": "Eritrea",
+      "cure": "107",
+      "dead": "0"
+    },
+    {
+      "confirm": "230",
+      "country": "Mongolia",
+      "cure": "202",
+      "dead": "0"
+    },
+    {
+      "confirm": "201",
+      "country": "Cayman Islands",
+      "cure": "197",
+      "dead": "1"
+    },
+    {
+      "confirm": "191",
+      "country": "Burundi",
+      "cure": "118",
+      "dead": "1"
+    },
+    {
+      "confirm": "190",
+      "country": "Guadeloupe",
+      "cure": "157",
+      "dead": "14"
+    },
+    {
+      "confirm": "188",
+      "country": "Faroe Islands",
+      "cure": "188",
+      "dead": "0"
+    },
+    {
+      "confirm": "180",
+      "country": "Gibraltar",
+      "cure": "176",
+      "dead": "0"
+    },
+    {
+      "confirm": "156",
+      "country": "Cambodia",
+      "cure": "133",
+      "dead": "0"
+    },
+    {
+      "confirm": "150",
+      "country": "Bermuda",
+      "cure": "137",
+      "dead": "9"
+    },
+    {
+      "confirm": "141",
+      "country": "Brunei",
+      "cure": "138",
+      "dead": "3"
+    },
+    {
+      "confirm": "133",
+      "country": "Trinidad and Tobago",
+      "cure": "120",
+      "dead": "8"
+    },
+    {
+      "confirm": "111",
+      "country": "Bahamas",
+      "cure": "89",
+      "dead": "11"
+    },
+    {
+      "confirm": "109",
+      "country": "Monaco",
+      "cure": "97",
+      "dead": "4"
+    },
+    {
+      "confirm": "105",
+      "country": "Aruba",
+      "cure": "99",
+      "dead": "3"
+    },
+    {
+      "confirm": "103",
+      "country": "Barbados",
+      "cure": "90",
+      "dead": "7"
+    },
+    {
+      "confirm": "100",
+      "country": "Seychelles",
+      "cure": "11",
+      "dead": "0"
+    },
+    {
+      "confirm": "84",
+      "country": "Liechtenstein",
+      "cure": "81",
+      "dead": "1"
+    },
+    {
+      "confirm": "82",
+      "country": "Bhutan",
+      "cure": "76",
+      "dead": "0"
+    },
+    {
+      "confirm": "78",
+      "country": "Sint Maarten",
+      "cure": "63",
+      "dead": "15"
+    },
+    {
+      "confirm": "74",
+      "country": "Antigua and Barbuda",
+      "cure": "57",
+      "dead": "3"
+    },
+    {
+      "confirm": "71",
+      "country": "Turks and Caicos",
+      "cure": "11",
+      "dead": "2"
+    },
+    {
+      "confirm": "64",
+      "country": "Gambia",
+      "cure": "34",
+      "dead": "3"
+    },
+    {
+      "confirm": "62",
+      "country": "French Polynesia",
+      "cure": "60",
+      "dead": "0"
+    },
+    {
+      "confirm": "46",
+      "country": "Macau",
+      "cure": "45",
+      "dead": "0"
+    },
+    {
+      "confirm": "43",
+      "country": "Saint Martin",
+      "cure": "37",
+      "dead": "3"
+    },
+    {
+      "confirm": "37",
+      "country": "Belize",
+      "cure": "20",
+      "dead": "2"
+    },
+    {
+      "confirm": "35",
+      "country": "St Vincent Grenadines",
+      "cure": "29",
+      "dead": "0"
+    },
+    {
+      "confirm": "26",
+      "country": "Fiji",
+      "cure": "18",
+      "dead": "0"
+    },
+    {
+      "confirm": "25",
+      "country": "Curaçao",
+      "cure": "24",
+      "dead": "1"
+    },
+    {
+      "confirm": "24",
+      "country": "Timor-Leste",
+      "cure": "24",
+      "dead": "0"
+    },
+    {
+      "confirm": "23",
+      "country": "Grenada",
+      "cure": "23",
+      "dead": "0"
+    },
+    {
+      "confirm": "22",
+      "country": "Saint Lucia",
+      "cure": "19",
+      "dead": "0"
+    },
+    {
+      "confirm": "21",
+      "country": "New Caledonia",
+      "cure": "21",
+      "dead": "0"
+    },
+    {
+      "confirm": "19",
+      "country": "Laos",
+      "cure": "19",
+      "dead": "0"
+    },
+    {
+      "confirm": "18",
+      "country": "Dominica",
+      "cure": "18",
+      "dead": "0"
+    },
+    {
+      "confirm": "17",
+      "country": "Saint Kitts and Nevis",
+      "cure": "15",
+      "dead": "0"
+    },
+    {
+      "confirm": "13",
+      "country": "Falkland Islands",
+      "cure": "13",
+      "dead": "0"
+    },
+    {
+      "confirm": "13",
+      "country": "Greenland",
+      "cure": "13",
+      "dead": "0"
+    },
+    {
+      "confirm": "12",
+      "country": "Montserrat",
+      "cure": "10",
+      "dead": "1"
+    },
+    {
+      "confirm": "12",
+      "country": "Vatican City",
+      "cure": "12",
+      "dead": "0"
+    },
+    {
+      "confirm": "11",
+      "country": "Papua New Guinea",
+      "cure": "8",
+      "dead": "0"
+    },
+    {
+      "confirm": "10",
+      "country": "Western Sahara",
+      "cure": "8",
+      "dead": "1"
+    },
+    {
+      "confirm": "9",
+      "country": "MS Zaandam",
+      "cure": "0",
+      "dead": "2"
+    },
+    {
+      "confirm": "8",
+      "country": "British Virgin Islands",
+      "cure": "7",
+      "dead": "1"
+    },
+    {
+      "confirm": "7",
+      "country": "Caribbean Netherlands",
+      "cure": "7",
+      "dead": "0"
+    },
+    {
+      "confirm": "6",
+      "country": "St Barth",
+      "cure": "6",
+      "dead": "0"
+    },
+    {
+      "confirm": "3",
+      "country": "Anguilla",
+      "cure": "3",
+      "dead": "0"
+    },
+    {
+      "confirm": "2",
+      "country": "Saint Pierre Miquelon",
+      "cure": "1",
+      "dead": "0"
+    },
+    {
+      "confirm": "3379082",
+      "country": "US",
+      "cure": "956162",
+      "dead": "137397"
+    },
+    {
+      "confirm": "1866176",
+      "country": "Brazil",
+      "cure": "1213512",
+      "dead": "72151"
+    },
+    {
+      "confirm": "879487",
+      "country": "India",
+      "cure": "554429",
+      "dead": "23194"
+    },
+    {
+      "confirm": "727162",
+      "country": "Russia",
+      "cure": "501061",
+      "dead": "11335"
+    },
+    {
+      "confirm": "326326",
+      "country": "Peru",
+      "cure": "217111",
+      "dead": "11870"
+    },
+    {
+      "confirm": "315041",
+      "country": "Chile",
+      "cure": "283902",
+      "dead": "6979"
+    },
+    {
+      "confirm": "300988",
+      "country": "Spain",
+      "cure": "-1",
+      "dead": "28403"
+    },
+    {
+      "confirm": "299750",
+      "country": "Mexico",
+      "cure": "184764",
+      "dead": "35006"
+    },
+    {
+      "confirm": "289603",
+      "country": "UK",
+      "cure": "-1",
+      "dead": "44819"
+    },
+    {
+      "confirm": "276242",
+      "country": "South Africa",
+      "cure": "134874",
+      "dead": "4079"
+    },
+    {
+      "confirm": "257303",
+      "country": "Iran",
+      "cure": "219993",
+      "dead": "12829"
+    },
+    {
+      "confirm": "251625",
+      "country": "Pakistan",
+      "cure": "161917",
+      "dead": "5266"
+    },
+    {
+      "confirm": "243061",
+      "country": "Italy",
+      "cure": "194928",
+      "dead": "34954"
+    },
+    {
+      "confirm": "232259",
+      "country": "Saudi Arabia",
+      "cure": "167138",
+      "dead": "2223"
+    },
+    {
+      "confirm": "212993",
+      "country": "Turkey",
+      "cure": "194515",
+      "dead": "5363"
+    },
+    {
+      "confirm": "199950",
+      "country": "Germany",
+      "cure": "184600",
+      "dead": "9134"
+    },
+    {
+      "confirm": "183795",
+      "country": "Bangladesh",
+      "cure": "93614",
+      "dead": "2352"
+    },
+    {
+      "confirm": "170752",
+      "country": "France",
+      "cure": "78388",
+      "dead": "30004"
+    },
+    {
+      "confirm": "150445",
+      "country": "Colombia",
+      "cure": "63451",
+      "dead": "5307"
+    },
+    {
+      "confirm": "107590",
+      "country": "Canada",
+      "cure": "71467",
+      "dead": "8783"
+    },
+    {
+      "confirm": "103598",
+      "country": "Qatar",
+      "cure": "99743",
+      "dead": "147"
+    },
+    {
+      "confirm": "100166",
+      "country": "Argentina",
+      "cure": "42694",
+      "dead": "1845"
+    },
+    {
+      "confirm": "83602",
+      "country": "Mainland China",
+      "cure": "78648",
+      "dead": "4634"
+    },
+    {
+      "confirm": "82070",
+      "country": "Egypt",
+      "cure": "24419",
+      "dead": "3858"
+    },
+    {
+      "confirm": "77506",
+      "country": "Iraq",
+      "cure": "44724",
+      "dead": "3150"
+    },
+    {
+      "confirm": "75699",
+      "country": "Indonesia",
+      "cure": "35638",
+      "dead": "3606"
+    },
+    {
+      "confirm": "74898",
+      "country": "Sweden",
+      "cure": "-1",
+      "dead": "5526"
+    },
+    {
+      "confirm": "67870",
+      "country": "Ecuador",
+      "cure": "30283",
+      "dead": "5047"
+    },
+    {
+      "confirm": "64932",
+      "country": "Belarus",
+      "cure": "55380",
+      "dead": "464"
+    },
+    {
+      "confirm": "62707",
+      "country": "Belgium",
+      "cure": "17196",
+      "dead": "9782"
+    },
+    {
+      "confirm": "59899",
+      "country": "Kazakhstan",
+      "cure": "34190",
+      "dead": "375"
+    },
+    {
+      "confirm": "56259",
+      "country": "Philippines",
+      "cure": "16046",
+      "dead": "1534"
+    },
+    {
+      "confirm": "56015",
+      "country": "Oman",
+      "cure": "36098",
+      "dead": "257"
+    },
+    {
+      "confirm": "54894",
+      "country": "Kuwait",
+      "cure": "44610",
+      "dead": "390"
+    },
+    {
+      "confirm": "54854",
+      "country": "United Arab Emirates",
+      "cure": "45140",
+      "dead": "333"
+    },
+    {
+      "confirm": "54133",
+      "country": "Ukraine",
+      "cure": "26503",
+      "dead": "1398"
+    },
+    {
+      "confirm": "51022",
+      "country": "Netherlands",
+      "cure": "-1",
+      "dead": "6137"
+    },
+    {
+      "confirm": "48187",
+      "country": "Bolivia",
+      "cure": "14843",
+      "dead": "1807"
+    },
+    {
+      "confirm": "46512",
+      "country": "Portugal",
+      "cure": "30907",
+      "dead": "1660"
+    },
+    {
+      "confirm": "45961",
+      "country": "Singapore",
+      "cure": "42285",
+      "dead": "26"
+    },
+    {
+      "confirm": "45633",
+      "country": "Panama",
+      "cure": "23039",
+      "dead": "909"
+    },
+    {
+      "confirm": "44532",
+      "country": "Dominican Republic",
+      "cure": "21459",
+      "dead": "897"
+    },
+    {
+      "confirm": "38670",
+      "country": "Israel",
+      "cure": "19008",
+      "dead": "362"
+    },
+    {
+      "confirm": "37891",
+      "country": "Poland",
+      "cure": "27148",
+      "dead": "1571"
+    },
+    {
+      "confirm": "34451",
+      "country": "Afghanistan",
+      "cure": "21216",
+      "dead": "1010"
+    },
+    {
+      "confirm": "32941",
+      "country": "Bahrain",
+      "cure": "28425",
+      "dead": "108"
+    },
+    {
+      "confirm": "32883",
+      "country": "Switzerland",
+      "cure": "29600",
+      "dead": "1968"
+    },
+    {
+      "confirm": "32558",
+      "country": "Nigeria",
+      "cure": "13447",
+      "dead": "740"
+    },
+    {
+      "confirm": "32535",
+      "country": "Romania",
+      "cure": "21545",
+      "dead": "1884"
+    },
+    {
+      "confirm": "32151",
+      "country": "Armenia",
+      "cure": "19865",
+      "dead": "573"
+    },
+    {
+      "confirm": "29355",
+      "country": "Guatemala",
+      "cure": "4214",
+      "dead": "1219"
+    },
+    {
+      "confirm": "28090",
+      "country": "Honduras",
+      "cure": "2957",
+      "dead": "774"
+    },
+    {
+      "confirm": "25628",
+      "country": "Ireland",
+      "cure": "23364",
+      "dead": "1746"
+    },
+    {
+      "confirm": "24518",
+      "country": "Ghana",
+      "cure": "20187",
+      "dead": "139"
+    },
+    {
+      "confirm": "24041",
+      "country": "Azerbaijan",
+      "cure": "15093",
+      "dead": "306"
+    },
+    {
+      "confirm": "21502",
+      "country": "Japan",
+      "cure": "18003",
+      "dead": "982"
+    },
+    {
+      "confirm": "19382",
+      "country": "Moldova",
+      "cure": "12667",
+      "dead": "642"
+    },
+    {
+      "confirm": "19195",
+      "country": "Algeria",
+      "cure": "13743",
+      "dead": "1011"
+    },
+    {
+      "confirm": "18897",
+      "country": "Austria",
+      "cure": "16952",
+      "dead": "708"
+    },
+    {
+      "confirm": "18360",
+      "country": "Serbia",
+      "cure": "13876",
+      "dead": "393"
+    },
+    {
+      "confirm": "16801",
+      "country": "Nepal",
+      "cure": "8589",
+      "dead": "38"
+    },
+    {
+      "confirm": "15745",
+      "country": "Morocco",
+      "cure": "12283",
+      "dead": "250"
+    },
+    {
+      "confirm": "15173",
+      "country": "Cameroon",
+      "cure": "11928",
+      "dead": "359"
+    },
+    {
+      "confirm": "13479",
+      "country": "South Korea",
+      "cure": "12204",
+      "dead": "289"
+    },
+    {
+      "confirm": "13193",
+      "country": "Uzbekistan",
+      "cure": "7852",
+      "dead": "61"
+    },
+    {
+      "confirm": "13174",
+      "country": "Czech Republic",
+      "cure": "8247",
+      "dead": "352"
+    },
+    {
+      "confirm": "12946",
+      "country": "Denmark",
+      "cure": "12077",
+      "dead": "609"
+    },
+    {
+      "confirm": "12766",
+      "country": "Ivory Coast",
+      "cure": "6654",
+      "dead": "84"
+    },
+    {
+      "confirm": "11117",
+      "country": "Kyrgyzstan",
+      "cure": "3460",
+      "dead": "147"
+    },
+    {
+      "confirm": "10250",
+      "country": "Sudan",
+      "cure": "5341",
+      "dead": "650"
+    },
+    {
+      "confirm": "10105",
+      "country": "Kenya",
+      "cure": "2881",
+      "dead": "185"
+    },
+    {
+      "confirm": "9980",
+      "country": "Australia",
+      "cure": "7768",
+      "dead": "108"
+    },
+    {
+      "confirm": "9674",
+      "country": "El Salvador",
+      "cure": "5663",
+      "dead": "267"
+    },
+    {
+      "confirm": "9465",
+      "country": "Venezuela",
+      "cure": "2671",
+      "dead": "89"
+    },
+    {
+      "confirm": "8981",
+      "country": "Norway",
+      "cure": "8138",
+      "dead": "252"
+    },
+    {
+      "confirm": "8718",
+      "country": "Malaysia",
+      "cure": "8519",
+      "dead": "122"
+    },
+    {
+      "confirm": "8135",
+      "country": "Senegal",
+      "cure": "5446",
+      "dead": "148"
+    },
+    {
+      "confirm": "8111",
+      "country": "North Macedonia",
+      "cure": "4203",
+      "dead": "382"
+    },
+    {
+      "confirm": "8033",
+      "country": "DRC",
+      "cure": "3615",
+      "dead": "189"
+    },
+    {
+      "confirm": "7596",
+      "country": "Costa Rica",
+      "cure": "2239",
+      "dead": "30"
+    },
+    {
+      "confirm": "7560",
+      "country": "Ethiopia",
+      "cure": "2430",
+      "dead": "127"
+    },
+    {
+      "confirm": "7294",
+      "country": "Finland",
+      "cure": "6800",
+      "dead": "329"
+    },
+    {
+      "confirm": "7252",
+      "country": "Bulgaria",
+      "cure": "3319",
+      "dead": "268"
+    },
+    {
+      "confirm": "6877",
+      "country": "Bosnia and Herzegovina",
+      "cure": "3115",
+      "dead": "221"
+    },
+    {
+      "confirm": "6727",
+      "country": "Haiti",
+      "cure": "2924",
+      "dead": "139"
+    },
+    {
+      "confirm": "6552",
+      "country": "Tajikistan",
+      "cure": "5228",
+      "dead": "55"
+    },
+    {
+      "confirm": "6230",
+      "country": "Palestine",
+      "cure": "942",
+      "dead": "36"
+    },
+    {
+      "confirm": "6141",
+      "country": "Guinea",
+      "cure": "4862",
+      "dead": "37"
+    },
+    {
+      "confirm": "5949",
+      "country": "French Guiana",
+      "cure": "2981",
+      "dead": "26"
+    },
+    {
+      "confirm": "5942",
+      "country": "Gabon",
+      "cure": "3004",
+      "dead": "46"
+    },
+    {
+      "confirm": "5355",
+      "country": "Mauritania",
+      "cure": "2363",
+      "dead": "147"
+    },
+    {
+      "confirm": "4972",
+      "country": "Djibouti",
+      "cure": "4712",
+      "dead": "56"
+    },
+    {
+      "confirm": "4925",
+      "country": "Luxembourg",
+      "cure": "4086",
+      "dead": "111"
+    },
+    {
+      "confirm": "4867",
+      "country": "Madagascar",
+      "cure": "2378",
+      "dead": "35"
+    },
+    {
+      "confirm": "4288",
+      "country": "CAR",
+      "cure": "1145",
+      "dead": "53"
+    },
+    {
+      "confirm": "4247",
+      "country": "Hungary",
+      "cure": "3073",
+      "dead": "595"
+    },
+    {
+      "confirm": "3803",
+      "country": "Greece",
+      "cure": "1374",
+      "dead": "193"
+    },
+    {
+      "confirm": "3722",
+      "country": "Croatia",
+      "cure": "2486",
+      "dead": "119"
+    },
+    {
+      "confirm": "3454",
+      "country": "Albania",
+      "cure": "1946",
+      "dead": "93"
+    },
+    {
+      "confirm": "3220",
+      "country": "Thailand",
+      "cure": "3090",
+      "dead": "58"
+    },
+    {
+      "confirm": "3071",
+      "country": "Equatorial Guinea",
+      "cure": "842",
+      "dead": "51"
+    },
+    {
+      "confirm": "3059",
+      "country": "Somalia",
+      "cure": "1264",
+      "dead": "93"
+    },
+    {
+      "confirm": "2948",
+      "country": "Paraguay",
+      "cure": "1275",
+      "dead": "22"
+    },
+    {
+      "confirm": "2846",
+      "country": "Nicaragua",
+      "cure": "1993",
+      "dead": "91"
+    },
+    {
+      "confirm": "2731",
+      "country": "Maldives",
+      "cure": "2284",
+      "dead": "13"
+    },
+    {
+      "confirm": "2711",
+      "country": "Mayotte",
+      "cure": "2480",
+      "dead": "37"
+    },
+    {
+      "confirm": "2617",
+      "country": "Sri Lanka",
+      "cure": "1981",
+      "dead": "11"
+    },
+    {
+      "confirm": "2426",
+      "country": "Cuba",
+      "cure": "2258",
+      "dead": "87"
+    },
+    {
+      "confirm": "2411",
+      "country": "Mali",
+      "cure": "1694",
+      "dead": "121"
+    },
+    {
+      "confirm": "2364",
+      "country": "Malawi",
+      "cure": "557",
+      "dead": "38"
+    },
+    {
+      "confirm": "2334",
+      "country": "Lebanon",
+      "cure": "1420",
+      "dead": "36"
+    },
+    {
+      "confirm": "2028",
+      "country": "Congo",
+      "cure": "589",
+      "dead": "47"
+    },
+    {
+      "confirm": "2021",
+      "country": "South Sudan",
+      "cure": "333",
+      "dead": "38"
+    },
+    {
+      "confirm": "2014",
+      "country": "Estonia",
+      "cure": "1895",
+      "dead": "69"
+    },
+    {
+      "confirm": "1901",
+      "country": "Slovakia",
+      "cure": "1493",
+      "dead": "28"
+    },
+    {
+      "confirm": "1896",
+      "country": "Iceland",
+      "cure": "1865",
+      "dead": "10"
+    },
+    {
+      "confirm": "1895",
+      "country": "Zambia",
+      "cure": "1412",
+      "dead": "42"
+    },
+    {
+      "confirm": "1869",
+      "country": "Lithuania",
+      "cure": "1571",
+      "dead": "79"
+    },
+    {
+      "confirm": "1842",
+      "country": "Guinea-Bissau",
+      "cure": "773",
+      "dead": "26"
+    },
+    {
+      "confirm": "1841",
+      "country": "Slovenia",
+      "cure": "1469",
+      "dead": "111"
+    },
+    {
+      "confirm": "1635",
+      "country": "Sierra Leone",
+      "cure": "1154",
+      "dead": "63"
+    },
+    {
+      "confirm": "1623",
+      "country": "Cabo Verde",
+      "cure": "748",
+      "dead": "19"
+    },
+    {
+      "confirm": "1544",
+      "country": "New Zealand",
+      "cure": "1497",
+      "dead": "22"
+    },
+    {
+      "confirm": "1470",
+      "country": "Hong Kong",
+      "cure": "1214",
+      "dead": "7"
+    },
+    {
+      "confirm": "1465",
+      "country": "Yemen",
+      "cure": "659",
+      "dead": "417"
+    },
+    {
+      "confirm": "1433",
+      "country": "Libya",
+      "cure": "341",
+      "dead": "39"
+    },
+    {
+      "confirm": "1378",
+      "country": "Benin",
+      "cure": "557",
+      "dead": "26"
+    },
+    {
+      "confirm": "1351",
+      "country": "Eswatini",
+      "cure": "668",
+      "dead": "20"
+    },
+    {
+      "confirm": "1337",
+      "country": "Rwanda",
+      "cure": "684",
+      "dead": "4"
+    },
+    {
+      "confirm": "1263",
+      "country": "Tunisia",
+      "cure": "1076",
+      "dead": "50"
+    },
+    {
+      "confirm": "1221",
+      "country": "Montenegro",
+      "cure": "325",
+      "dead": "23"
+    },
+    {
+      "confirm": "1179",
+      "country": "Jordan",
+      "cure": "997",
+      "dead": "10"
+    },
+    {
+      "confirm": "1173",
+      "country": "Latvia",
+      "cure": "1019",
+      "dead": "30"
+    },
+    {
+      "confirm": "1157",
+      "country": "Mozambique",
+      "cure": "364",
+      "dead": "9"
+    },
+    {
+      "confirm": "1099",
+      "country": "Niger",
+      "cure": "992",
+      "dead": "68"
+    },
+    {
+      "confirm": "1036",
+      "country": "Burkina Faso",
+      "cure": "869",
+      "dead": "53"
+    },
+    {
+      "confirm": "1025",
+      "country": "Uganda",
+      "cure": "972",
+      "dead": "0"
+    },
+    {
+      "confirm": "1021",
+      "country": "Cyprus",
+      "cure": "839",
+      "dead": "19"
+    },
+    {
+      "confirm": "1010",
+      "country": "Liberia",
+      "cure": "423",
+      "dead": "51"
+    },
+    {
+      "confirm": "995",
+      "country": "Georgia",
+      "cure": "857",
+      "dead": "15"
+    },
+    {
+      "confirm": "987",
+      "country": "Uruguay",
+      "cure": "896",
+      "dead": "31"
+    },
+    {
+      "confirm": "985",
+      "country": "Zimbabwe",
+      "cure": "328",
+      "dead": "18"
+    },
+    {
+      "confirm": "880",
+      "country": "Chad",
+      "cure": "790",
+      "dead": "75"
+    },
+    {
+      "confirm": "855",
+      "country": "Andorra",
+      "cure": "803",
+      "dead": "52"
+    },
+    {
+      "confirm": "785",
+      "country": "Namibia",
+      "cure": "26",
+      "dead": "1"
+    },
+    {
+      "confirm": "758",
+      "country": "Jamaica",
+      "cure": "620",
+      "dead": "10"
+    },
+    {
+      "confirm": "741",
+      "country": "Suriname",
+      "cure": "495",
+      "dead": "18"
+    },
+    {
+      "confirm": "729",
+      "country": "Sao Tome and Principe",
+      "cure": "286",
+      "dead": "14"
+    },
+    {
+      "confirm": "720",
+      "country": "Togo",
+      "cure": "513",
+      "dead": "15"
+    },
+    {
+      "confirm": "712",
+      "country": "Diamond Princess Cruise",
+      "cure": "651",
+      "dead": "13"
+    },
+    {
+      "confirm": "699",
+      "country": "San Marino",
+      "cure": "656",
+      "dead": "42"
+    },
+    {
+      "confirm": "674",
+      "country": "Malta",
+      "cure": "660",
+      "dead": "9"
+    },
+    {
+      "confirm": "593",
+      "country": "Réunion",
+      "cure": "472",
+      "dead": "3"
+    },
+    {
+      "confirm": "577",
+      "country": "Channel Islands",
+      "cure": "512",
+      "dead": "47"
+    },
+    {
+      "confirm": "509",
+      "country": "Tanzania",
+      "cure": "183",
+      "dead": "21"
+    },
+    {
+      "confirm": "506",
+      "country": "Angola",
+      "cure": "118",
+      "dead": "26"
+    },
+    {
+      "confirm": "451",
+      "country": "Taiwan",
+      "cure": "440",
+      "dead": "7"
+    },
+    {
+      "confirm": "399",
+      "country": "Botswana",
+      "cure": "38",
+      "dead": "1"
+    },
+    {
+      "confirm": "394",
+      "country": "Syria",
+      "cure": "126",
+      "dead": "16"
+    },
+    {
+      "confirm": "372",
+      "country": "Vietnam",
+      "cure": "350",
+      "dead": "0"
+    },
+    {
+      "confirm": "342",
+      "country": "Mauritius",
+      "cure": "330",
+      "dead": "10"
+    },
+    {
+      "confirm": "336",
+      "country": "Isle of Man",
+      "cure": "312",
+      "dead": "24"
+    },
+    {
+      "confirm": "331",
+      "country": "Myanmar",
+      "cure": "261",
+      "dead": "6"
+    },
+    {
+      "confirm": "317",
+      "country": "Comoros",
+      "cure": "296",
+      "dead": "7"
+    },
+    {
+      "confirm": "297",
+      "country": "Guyana",
+      "cure": "154",
+      "dead": "17"
+    },
+    {
+      "confirm": "255",
+      "country": "Martinique",
+      "cure": "98",
+      "dead": "15"
+    },
+    {
+      "confirm": "233",
+      "country": "Lesotho",
+      "cure": "32",
+      "dead": "2"
+    },
+    {
+      "confirm": "232",
+      "country": "Eritrea",
+      "cure": "107",
+      "dead": "0"
+    },
+    {
+      "confirm": "230",
+      "country": "Mongolia",
+      "cure": "203",
+      "dead": "0"
+    },
+    {
+      "confirm": "201",
+      "country": "Cayman Islands",
+      "cure": "197",
+      "dead": "1"
+    },
+    {
+      "confirm": "191",
+      "country": "Burundi",
+      "cure": "118",
+      "dead": "1"
+    },
+    {
+      "confirm": "190",
+      "country": "Guadeloupe",
+      "cure": "157",
+      "dead": "14"
+    },
+    {
+      "confirm": "188",
+      "country": "Faroe Islands",
+      "cure": "188",
+      "dead": "0"
+    },
+    {
+      "confirm": "180",
+      "country": "Gibraltar",
+      "cure": "176",
+      "dead": "0"
+    },
+    {
+      "confirm": "156",
+      "country": "Cambodia",
+      "cure": "133",
+      "dead": "0"
+    },
+    {
+      "confirm": "150",
+      "country": "Bermuda",
+      "cure": "137",
+      "dead": "9"
+    },
+    {
+      "confirm": "141",
+      "country": "Brunei",
+      "cure": "138",
+      "dead": "3"
+    },
+    {
+      "confirm": "133",
+      "country": "Trinidad and Tobago",
+      "cure": "120",
+      "dead": "8"
+    },
+    {
+      "confirm": "111",
+      "country": "Bahamas",
+      "cure": "89",
+      "dead": "11"
+    },
+    {
+      "confirm": "109",
+      "country": "Monaco",
+      "cure": "97",
+      "dead": "4"
+    },
+    {
+      "confirm": "105",
+      "country": "Aruba",
+      "cure": "99",
+      "dead": "3"
+    },
+    {
+      "confirm": "103",
+      "country": "Barbados",
+      "cure": "90",
+      "dead": "7"
+    },
+    {
+      "confirm": "100",
+      "country": "Seychelles",
+      "cure": "11",
+      "dead": "0"
+    },
+    {
+      "confirm": "84",
+      "country": "Bhutan",
+      "cure": "76",
+      "dead": "0"
+    },
+    {
+      "confirm": "84",
+      "country": "Liechtenstein",
+      "cure": "81",
+      "dead": "1"
+    },
+    {
+      "confirm": "78",
+      "country": "Sint Maarten",
+      "cure": "63",
+      "dead": "15"
+    },
+    {
+      "confirm": "74",
+      "country": "Antigua and Barbuda",
+      "cure": "57",
+      "dead": "3"
+    },
+    {
+      "confirm": "71",
+      "country": "Turks and Caicos",
+      "cure": "11",
+      "dead": "2"
+    },
+    {
+      "confirm": "64",
+      "country": "Gambia",
+      "cure": "34",
+      "dead": "3"
+    },
+    {
+      "confirm": "62",
+      "country": "French Polynesia",
+      "cure": "60",
+      "dead": "0"
+    },
+    {
+      "confirm": "46",
+      "country": "Macau",
+      "cure": "45",
+      "dead": "0"
+    },
+    {
+      "confirm": "43",
+      "country": "Saint Martin",
+      "cure": "37",
+      "dead": "3"
+    },
+    {
+      "confirm": "37",
+      "country": "Belize",
+      "cure": "20",
+      "dead": "2"
+    },
+    {
+      "confirm": "35",
+      "country": "St Vincent Grenadines",
+      "cure": "29",
+      "dead": "0"
+    },
+    {
+      "confirm": "26",
+      "country": "Fiji",
+      "cure": "18",
+      "dead": "0"
+    },
+    {
+      "confirm": "25",
+      "country": "Curaçao",
+      "cure": "24",
+      "dead": "1"
+    },
+    {
+      "confirm": "24",
+      "country": "Timor-Leste",
+      "cure": "24",
+      "dead": "0"
+    },
+    {
+      "confirm": "23",
+      "country": "Grenada",
+      "cure": "23",
+      "dead": "0"
+    },
+    {
+      "confirm": "22",
+      "country": "Saint Lucia",
+      "cure": "19",
+      "dead": "0"
+    },
+    {
+      "confirm": "21",
+      "country": "New Caledonia",
+      "cure": "21",
+      "dead": "0"
+    },
+    {
+      "confirm": "19",
+      "country": "Laos",
+      "cure": "19",
+      "dead": "0"
+    },
+    {
+      "confirm": "18",
+      "country": "Dominica",
+      "cure": "18",
+      "dead": "0"
+    },
+    {
+      "confirm": "17",
+      "country": "Saint Kitts and Nevis",
+      "cure": "15",
+      "dead": "0"
+    },
+    {
+      "confirm": "13",
+      "country": "Falkland Islands",
+      "cure": "13",
+      "dead": "0"
+    },
+    {
+      "confirm": "13",
+      "country": "Greenland",
+      "cure": "13",
+      "dead": "0"
+    },
+    {
+      "confirm": "12",
+      "country": "Montserrat",
+      "cure": "10",
+      "dead": "1"
+    },
+    {
+      "confirm": "12",
+      "country": "Vatican City",
+      "cure": "12",
+      "dead": "0"
+    },
+    {
+      "confirm": "11",
+      "country": "Papua New Guinea",
+      "cure": "8",
+      "dead": "0"
+    },
+    {
+      "confirm": "10",
+      "country": "Western Sahara",
+      "cure": "8",
+      "dead": "1"
+    },
+    {
+      "confirm": "9",
+      "country": "MS Zaandam",
+      "cure": "0",
+      "dead": "2"
+    },
+    {
+      "confirm": "8",
+      "country": "British Virgin Islands",
+      "cure": "7",
+      "dead": "1"
+    },
+    {
+      "confirm": "7",
+      "country": "Caribbean Netherlands",
+      "cure": "7",
+      "dead": "0"
+    },
+    {
+      "confirm": "6",
+      "country": "St Barth",
+      "cure": "6",
+      "dead": "0"
+    },
+    {
+      "confirm": "3",
+      "country": "Anguilla",
+      "cure": "3",
+      "dead": "0"
+    },
+    {
+      "confirm": "2",
+      "country": "Saint Pierre Miquelon",
+      "cure": "1",
+      "dead": "0"
+    }
+  ]
+}

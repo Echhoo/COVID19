@@ -113,7 +113,7 @@ class Spider:
 
         # 判断数据库中是否有当日数据
         database = self.db[self.OTHER_TABLE]
-        exists = database.find_one({"country": "US", "date": date})
+        exists = database.find_one({"date": date})
         if exists is None:
             # 当日数据不存在, 则需要插入
             # 获取所有其他国家数据的Tag list

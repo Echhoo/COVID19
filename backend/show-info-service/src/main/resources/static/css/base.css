@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: PingFangSC-Light, 微软雅黑;
+}
+body,html{
+    width: 100%;
+    height: auto;
+    color:#333;
+    /* overflow: hidden;*/
+    background: url('../img/true.png') no-repeat;
+    background-size: 100% 100%;
+}
+/*各浏览器显示不同，去掉蓝色边框*/
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: x-large;
+}
+/*清除浮动*/
+.clear-both:before, .clear-both:after {
+    display: table;
+    content: "";
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+/*header开始*/
+.header{
+    width: 100%;
+    height: 80px;
+    padding:0 20px;
+    min-width: 1366px;
+}
+.bg_header{
+    width: 100%;
+    height: 80px;
+    display: block;
+    background: url(../img/title.png) no-repeat;
+    background-size: 100% 100%;
+}
+.header>.header_nav{
+    margin-left: 20px;
+}
+.header>.hd_nav{
+    display: block;
+    margin-top: 50px;
+}
+.header>.bg_header>.header_time>.time{
+    display:inline-table;
+    color: white;
+    font-size: x-large;
+}
+#dateTime{
+    width: fit-content; 
+    background-color:
+     rgb(128,128,128);
+     border:1px solid  rgb(128,128,128);
+     border-radius: 5px;
+}

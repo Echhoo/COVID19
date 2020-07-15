@@ -8,7 +8,8 @@
 - [framework](#framework)
   - [frontend](#frontend)
   - [backend](#backend)
-    - [spider](#spider)
+    - [spider-thrift-service](#spider-thrift-service)
+    - [spider-thrift-service-api](#spider-thrift-service-api)
   - [docs](#docs)
     - [DB_design.md](#db_designmd)
     - [spring_thrift_api.md](#spring_thrift_apimd)
@@ -30,8 +31,11 @@
 ## backend
 > 后端文件夹
 
-### spider
+### spider-thrift-service
 > 爬
+
+### spider-thrift-service-api
+> 爬虫java接口
 
 ## docs
 > 项目文档
